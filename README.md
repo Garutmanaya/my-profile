@@ -73,14 +73,28 @@
 
 [To be developed and reviewed.]
 
-### 5.3 Verizon Data Services
+### 5.3 Verizon Data Services Technology Centre
 
-**Designation:** [To verify]  
-**Employment period:** October 2004 – July 2006 [To verify]
+<table>
+<tbody>
+<tr><td><small><em>Organization</em></small></td><td><small>Verizon Data Services Technology Centre, Tampa, Florida, USA</small></td></tr>
+<tr><td><small><em>Designation</em></small></td><td><small>Software Analyst</small></td></tr>
+<tr><td><small><em>Employment Period</em></small></td><td><small>October 2004 – July 2006</small></td></tr>
+<tr><td><small><em>Role and Responsibilities</em></small></td><td><small>Developed, maintained, and enhanced modules within RequestNet, Verizon’s enterprise system for managing high-capacity telecommunications service requests, with particular responsibility for reporting, critical-date calculations, and QueryNet functionality.</small></td></tr>
+<tr><td><small><em>Skills / Technologies</em></small></td><td><small>Linux, C++, Java, SQL, PL/SQL, Oracle 8i, Sun iPlanet Server, JSP, JavaScript, Perl</small></td></tr>
+</tbody>
+</table>
 
-#### Projects
+**Projects**
 
-[To be developed and reviewed.]
+#### 5.3.1 RequestNet — High-Capacity Service Pre-Provisioning
+
+**Description:** RequestNet was an enterprise pre-provisioning system that provided a centralized web-based entry point for field sales and customer service personnel to submit and track requests for high-capacity telecommunications services. The system supported facility verification, request processing, and communication of service installation availability to the originating teams.
+
+**Technical Contributions:**
+- Developed and maintained **reporting modules** supporting the processing and visibility of service requests.
+- Implemented enhancements to **critical-date calculation** functionality used in service-request workflows.
+- Maintained and enhanced **QueryNet** modules within the RequestNet application.
 
 ### 5.4 ActivCard Software Private Limited
 
