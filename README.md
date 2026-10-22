@@ -45,20 +45,51 @@
 
 ### 5.1 Verisign, Inc.
 
-**Designation:** [To verify]  
-**Employment period:** November 2011 – Present [To verify]
+<table>
+<tbody>
+<tr><td><small><em>Organization</em></small></td><td><small>Verisign, Inc., Reston, Virginia, USA</small></td></tr>
+<tr><td><small><em>Designation</em></small></td><td><small>Engineer III (designation in original resume; current title to confirm)</small></td></tr>
+<tr><td><small><em>Employment Period</em></small></td><td><small>November 2011 – Present</small></td></tr>
+<tr><td><small><em>Role and Responsibilities</em></small></td><td><small>Designed and implemented tools for performance and scalability testing of Verisign registry products. Developed test automation, data-processing pipelines, and reporting capabilities to analyze registry transaction logs, assess response-time behavior, and support test-environment operations.</small></td></tr>
+<tr><td><small><em>Skills / Technologies</em></small></td><td><small>Linux, Java, GWT, Spring, Spring Expression Language, Hadoop, HDFS, MapReduce, Hive, Hive UDFs, Sqoop, Flume, Cassandra, Pig, MySQL, REST, JSON, Rundeck, Pentaho BI, Grinder, JProfiler, Ant, RPM</small></td></tr>
+</tbody>
+</table>
 
-#### Project 1 — [Project name]
+**Projects**
 
-[To be developed and reviewed.]
+#### 5.1.1 Domain History Migration — Oracle to Cassandra
 
-#### Project 2 — [Project name]
+**Description:** Migrated historical domain-transaction records from an Oracle database to Cassandra to support multiple reporting views over domain history data.
 
-[To be developed and reviewed.]
+**Technical Contributions:**
+- Automated extraction and loading of historical transaction data using **Apache Sqoop**.
+- Designed and implemented multiple **Apache Hive schemas**, using **bucketing** to organize data for reporting and analysis.
 
-#### Additional Projects
+#### 5.1.2 P&S Hadoop Cluster — Registry Performance Analytics
 
-[To be developed and reviewed.]
+**Description:** Established a Hadoop-based test-environment analytics platform for examining production logs, designing representative test scenarios, and analyzing test execution logs for unusual performance behavior and trends.
+
+**Technical Contributions:**
+- Installed, configured, and administered a **five-node Hadoop cluster**, configured for **60 mappers and 60 reducers** in the P&S test environment.
+- Automated **near-real-time ingestion with Apache Flume** and batch ingestion using scripts.
+- Developed **Java MapReduce jobs, Hive queries, and Hive user-defined functions (UDFs)** to produce reports on response times, registrar activity, domain-name trends, and top-level domain (TLD) trends.
+- Automated data export from **HDFS to MySQL** using **Sqoop**.
+- Evaluated open-source business-intelligence tools, including **NextReports, Pentaho, and SpagoBI**; configured **Pentaho BI** and developed reports presenting analysis results.
+- Investigated **YSmart** as a possible approach to generating Java MapReduce programs from Hive queries.
+
+#### 5.1.3 PSUTF — P&S Unified Testing Framework
+
+**Description:** Designed a centralized, extensible load-generation framework for performance and scalability testing of Verisign registry products, including **Core, CTLD, and Name Suggestion**. The framework used dynamic, JSON-based configuration to support reusable test scenarios and pluggable commands and data types.
+
+**Technical Contributions:**
+- Analyzed requirements and designed and implemented the **testing framework**.
+- Developed extensible **command and data-bean components** using **Spring** and **Spring Expression Language (SpEL)**, allowing additional command and data types to be configured without modifying framework code.
+- Implemented a centralized **configuration manager** using **JSON and REST**.
+- Developed **PSWeb**, a **GWT-based** interface for monitoring statistics from active test runs through REST/JSON services.
+- Created service-management shell scripts for the framework's **manager, agent, and console** components; implemented **Ant** build scripts and **RPM** packaging specifications.
+- Evaluated, installed, and configured **Rundeck** to automate operational tasks, including software installation, configuration updates, service-status checks, and test-environment maintenance.
+
+<!-- Additional Verisign projects developed after the original resume (including EPP SLA analytics/AI work, AWS/OpenStack deployments, and Kubernetes) will be added only after their responsibilities and implementation details are reviewed. -->
 
 ### 5.2 Smith Micro Software, Inc.
 
