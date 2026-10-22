@@ -82,24 +82,43 @@
 
 [To be developed and reviewed.]
 
-### 5.4 ActivCard
+### 5.4 ActivCard Software Private Limited
 
-**Designation:** [To verify]  
-**Employment period:** January 2003 – June 2004 [To verify]
+<table>
+<tbody>
+<tr><td><small><em>Organization</em></small></td><td><small>ActivCard Software Private Limited, Hyderabad, India</small></td></tr>
+<tr><td><small><em>Designation</em></small></td><td><small>Senior Software Engineer</small></td></tr>
+<tr><td><small><em>Employment Period</em></small></td><td><small>January 2003 – June 2004</small></td></tr>
+<tr><td><small><em>Role and Responsibilities</em></small></td><td><small>Designed and developed smart-card security applications and middleware for Linux, Solaris, and Mac OS X, including cryptographic services, authentication integration, and card lifecycle management.</small></td></tr>
+<tr><td><small><em>Skills / Technologies</em></small></td><td><small>C, C++, Linux (Red Hat 8/9), Solaris 8/9, Mac OS X 10.2, ISO 7816, PKCS#11, X.509, OpenSSL, PAM, Kerberos, Active Directory, Oracle 8i, OCI, ODBC, SQL, MUSCLE framework, USB smart-card readers, Schlumberger 64K smart cards</small></td></tr>
+</tbody>
+</table>
 
-#### Projects
+**Projects**
 
-[To be developed and reviewed.]
+#### 5.4.1 Smart Card Application Suite
+
+**Description:** A cross-platform smart-card security suite for Linux, Solaris, and Mac OS X, supporting cryptographic operations, certificate management, user authentication, and smart-card issuance and maintenance.
+
+**Technical Contributions:**
+- Implemented smart-card middleware APIs (**BSI, XSI, and SCard**) to exchange **ISO 7816 Application Protocol Data Units (APDUs)** with smart cards.
+- Implemented **PKCS#11 cryptographic services** for email encryption, digital signatures, secure browsing, and X.509 certificate download and import.
+- Integrated smart-card authentication with the **Linux Pluggable Authentication Modules (PAM)** framework, supporting local authentication using passwords or PKI credentials and domain authentication using **Kerberos and Microsoft Active Directory**.
+- Developed a database access API to retrieve smart-card lifecycle information from an **Oracle** backend for card issuance and updates through issuance and user portals.
+- Developed testing utilities for **PKCS#11** and **Microsoft Cryptographic Service Provider (MS-CSP)** interfaces.
+- Investigated **EMV authentication mechanisms** for potential support in the application suite.
 
 ### 5.5 Ericsson India Private Limited
 
-| | |
-|:---|:---|
-| *Organization* | Ericsson India Private Limited, Hyderabad, India |
-| *Designation* | Senior Software Engineer |
-| *Employment Period* | August 2000 – January 2003 |
-| *Role and Responsibilities* | Maintained and enhanced the Ericsson Tigris family of multiservice access routers, focusing on network security protocols, IPsec integration, hardware acceleration, and VPN capabilities. |
-| *Skills / Technologies* | C, C++, Java, Linux, Solaris UNIX, IPsec, IKE, L2TP, VPN, ADSP-2141, SCEP, OCSP |
+<table>
+<tbody>
+<tr><td><small><em>Organization</em></small></td><td><small>Ericsson India Private Limited, Hyderabad, India</small></td></tr>
+<tr><td><small><em>Designation</em></small></td><td><small>Senior Software Engineer</small></td></tr>
+<tr><td><small><em>Employment Period</em></small></td><td><small>August 2000 – January 2003</small></td></tr>
+<tr><td><small><em>Role and Responsibilities</em></small></td><td><small>Maintained and enhanced the Ericsson Tigris family of multiservice access routers, focusing on network security protocols, IPsec integration, hardware acceleration, and VPN capabilities.</small></td></tr>
+<tr><td><small><em>Skills / Technologies</em></small></td><td><small>C, C++, Java, Linux, Solaris UNIX, IPsec, IKE, L2TP, VPN, ADSP-2141, SCEP, OCSP</small></td></tr>
+</tbody>
+</table>
 
 **Projects**
 
@@ -117,13 +136,15 @@
 
 ### 5.6 Bharat Electronics Limited (BEL) — Central Research Laboratory
 
-| | |
-|:---|:---|
-| *Organization* | Central Research Laboratory, BEL, Jalahalli Post, Bangalore – 560013 |
-| *Designation* | Member (Research Staff), Crypto Group |
-| *Employment Period* | June 1999 – August 2000 |
-| *Role and Responsibilities* | Researched and implemented security solutions, including cryptographic support for network communications and interfaces for GPS-based monitoring systems. |
-| *Skills / Technologies* | C, C++, UNIX (Red Hat Linux 5.2), Windows 95, Oracle RDBMS, WebLogic, ClearCase, MOXA C101 synchronous communication card, JRC GPS module |
+<table>
+<tbody>
+<tr><td><small><em>Organization</em></small></td><td><small>Central Research Laboratory, BEL, Jalahalli Post, Bangalore – 560013</small></td></tr>
+<tr><td><small><em>Designation</em></small></td><td><small>Member (Research Staff), Crypto Group</small></td></tr>
+<tr><td><small><em>Employment Period</em></small></td><td><small>June 1999 – August 2000</small></td></tr>
+<tr><td><small><em>Role and Responsibilities</em></small></td><td><small>Researched and implemented security solutions, including cryptographic support for network communications and interfaces for GPS-based monitoring systems.</small></td></tr>
+<tr><td><small><em>Skills / Technologies</em></small></td><td><small>C, C++, UNIX (Red Hat Linux 5.2), Windows 95, Oracle RDBMS, WebLogic, ClearCase, MOXA C101 synchronous communication card, JRC GPS module</small></td></tr>
+</tbody>
+</table>
 
 **Projects**
 
