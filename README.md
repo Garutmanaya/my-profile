@@ -14,7 +14,13 @@
 
 ## 2. Professional Profile
 
-[To be developed and reviewed.]
+Software engineer and technology-focused product developer with **over 25 years of hands-on experience** designing, implementing, integrating, and validating software across embedded systems, network security, enterprise platforms, distributed data systems, cloud infrastructure, and applied AI. Experience ranges from **Linux kernel drivers, IPsec/IKE, cryptographic protocols, and PKI** to **scalable server architectures, Hadoop/Cassandra analytics, machine-learning pipelines, and AI-agent infrastructure**.
+
+Strong record of translating technical requirements into working systems through **independent research, architecture design, open-source evaluation, rapid prototyping, and implementation**. Contributions include router security and hardware-assisted IPsec processing; smart-card middleware and authentication; mobile VPN gateways; certificate-authority integration; distributed server and data platforms; performance-testing frameworks; and operational analytics. Work spans low-level C/C++ development, Java enterprise systems, and Python-based AI/ML applications.
+
+More recently, expanded into **domain-specific natural-language-to-SQL model training, XGBoost-based anomaly detection, and AI-agent security and interoperability**. Developed AgentNebula as an independent engineering project to explore agent registration, discovery, lifecycle management, identity, OAuth, PKI, and policy-based authorization using A2A, AuthZEN, and OPA.
+
+**Engineering strengths:** Ability to move between unfamiliar technology domains, identify and reuse mature open-source components, define clear integration boundaries, and build and troubleshoot complex software from protocol and infrastructure layers through application interfaces. Emphasis on maintainable architecture, security, performance, and practical delivery rather than technology adoption for its own sake.
 
 ## 3. Technical Expertise
 
