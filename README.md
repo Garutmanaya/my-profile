@@ -102,33 +102,30 @@
 
 ### 5.6 Bharat Electronics Limited (BEL) — Central Research Laboratory
 
-**Designation:** Research Staff — Cryptography Group  
-**Employment Period:** June 1999 – August 2000
-
-**Role and Responsibilities**
-- Developed Linux-based software components for secure communication systems.
-- Implemented device-interface and data-processing functionality for research projects.
+| Field | Details |
+|---|---|
+| **Organization** | Central Research Laboratory, BEL, Jalahalli Post, Bangalore – 560013 |
+| **Designation** | Member (Research Staff) in Crypto Group |
+| **Employment Period** | June 1999 – August 2000 |
+| **Role and Responsibilities** | Research and implementation of security solutions |
+| **Skills / Technologies** | C, C++, UNIX (RHL 5.2), Windows 95, Oracle RDBMS, WebLogic, ClearCase, MOXA C101 Sync Card, JRC GPS Module |
 
 **Projects**
 
-#### 5.6.1 Frame Relay Encryptor / Decryptor
+#### 5.6.1 FRED — Frame Relay Encryptor and Decryptor
 
-**Description:** Linux-based cryptographic interface for a Frame Relay communication system.
-
-**Technical Contributions:**
-- Developed a Linux device driver for the **MOXA C101** Frame Relay interface.
-- Worked on integrating encryption and decryption functionality with the Frame Relay communication path.
-
-#### 5.6.2 GPS-Based Vehicle Tracking
-
-**Description:** Vehicle-tracking application that processes GPS data.
+**Description:** FRED provides encrypted Frame Relay traffic between a Frame Relay Access Device (FRAD) and a Frame Relay Switch (FRS).
 
 **Technical Contributions:**
-- Developed a GPS data parser for the vehicle-tracking application.
+- Worked on Linux cryptographic driver implementation for the **MOXA C101 PCI card**.
+- Worked with the card's high-speed synchronous/asynchronous interface, equipped with an **HD64570 Serial Communication Adapter (SCA)** and **256 KB dual-ported RAM**.
 
-**Skills / Technologies:** Linux, C, Linux device drivers, Frame Relay, cryptography, GPS data processing. [Confirm whether C was used for the GPS parser.]
+#### 5.6.2 GPS-Based Vehicle Tracking and Monitoring System
 
-*Review pending: confirm project architecture, specific encryption algorithms, interfaces, implementation details, and results before publication.*
+**Description:** Vehicle tracking and monitoring system displaying the current vehicle location from longitude and latitude received from a GPS receiver mounted on the vehicle.
+
+**Technical Contributions:**
+- Implemented the GPS module interface to validate and extract longitude and latitude from **81-byte GPS frames**.
 
 ## 6. Education and Certifications
 
