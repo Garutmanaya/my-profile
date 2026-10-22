@@ -20,26 +20,64 @@
 
 [To be developed and reviewed.]
 
-## 4. Independent Project — AgentNebula
+## 4. AI Learning and Independent Projects
 
-### Overview
+This section documents applied work in agent infrastructure, natural-language data access, machine learning, and model deployment. The EPP SLA projects below are described from the corresponding source repositories; production adoption and measured business outcomes are not claimed.
 
-[To be developed and reviewed.]
+### 4.1 AgentNebula — Agent Infrastructure and Security Platform
 
-### Role and Responsibilities
+**Description:** Independent engineering project exploring infrastructure for registering, discovering, securing, and managing AI agents, with emphasis on interoperability and enterprise security controls.
 
-[To be developed and reviewed.]
+**Technical Contributions:**
+- Developed modular platform services for agent registration and discovery, resource lifecycle management, identity, authentication, authorization, PKI, and policy evaluation.
+- Integrated the official **A2A Python SDK** and developed agent-facing security integration components, including OAuth-related services and an **OPA/Rego-backed authorization policy service using AuthZEN**.
+- Explored agent orchestration, skills, and user-interface integration as part of an extensible agent platform architecture.
 
-### Architecture
-
-[To be developed and reviewed.]
-
-### Technical Contributions
-
-[To be developed and reviewed.]
+**Skills / Technologies:** Python, A2A, OAuth 2.0, AuthZEN, Open Policy Agent (OPA), Rego, PKI, REST APIs, agent architecture.
 
 **Website:** https://agentnebula.ai  
 **Documentation:** https://docs.agentnebula.ai
+
+*AgentNebula details will be reviewed separately against its current repositories.*
+
+### 4.2 EPP SLA — Natural Language to SQL Model Training
+
+**Description:** Developed a domain-specific Text-to-SQL training pipeline that translates natural-language questions about Extensible Provisioning Protocol (EPP) service-level metrics into SQL queries. The project uses schema-aware prompts and synthetic training examples to investigate specialized model adaptation for operational analytics.
+
+**Technical Contributions:**
+- Implemented a configurable **synthetic question/SQL-pair generator** using EPP database schemas, query templates, filtering and aggregation rules, and SQLite-based SQL validation.
+- Developed **linguistic data augmentation** and schema serialization to produce varied training questions while retaining database identifiers and SQL semantics.
+- Implemented fine-tuning of **Google FLAN-T5** using **Hugging Face Transformers** and **PEFT/LoRA**, with a training/evaluation split and versioned model artifacts.
+- Built schema-aware inference logic for generating SQL from user questions, including tokenization-aware handling of qualified column names.
+- Created an end-to-end workflow for data generation, augmentation, model training, inference testing, and optional **Amazon S3** artifact synchronization; included **AWS SageMaker** deployment infrastructure in the repository.
+
+**Skills / Technologies:** Python, PyTorch, FLAN-T5, Hugging Face Transformers, PEFT/LoRA, natural-language processing, Text-to-SQL, SQLite, Pandas, Amazon S3, AWS SageMaker, Terraform.
+
+### 4.3 EPP SLA — AI Business Intelligence Agent
+
+**Description:** Developed an interactive analytics application that accepts natural-language questions about EPP transaction volumes, response times, failures, registrar activity, and release impacts; generates SQL through a selected language-model backend; and presents query results as tables and visualizations.
+
+**Technical Contributions:**
+- Integrated a custom Text-to-SQL model alongside configurable **OpenAI** and **Hugging Face** model endpoints, enabling comparison of generated SQL and inference latency.
+- Developed a **Streamlit** interface for question entry, SQL generation, query execution, tabular results, and interactive analytics.
+- Implemented a **SQLite**-based EPP analytics dataset and synthetic-data generation for demonstrating operational reporting scenarios.
+- Added configurable model endpoint authentication and optional **Amazon S3** database synchronization.
+
+**Skills / Technologies:** Python, Streamlit, SQLite, Pandas, Plotly, REST APIs, Text-to-SQL, language-model integration, Amazon S3.
+
+### 4.4 EPP SLA — Machine Learning Anomaly Detection
+
+**Description:** Designed a multi-model anomaly-detection system for hourly EPP service-level metrics, including successful and failed transaction volumes and response-time measurements. The system evaluates deviations from expected operating patterns and supports comparison of supervised and unsupervised approaches.
+
+**Technical Contributions:**
+- Developed an **XGBoost regression-based anomaly detection approach** that estimates expected metric values and identifies deviations through residual analysis and configurable thresholds.
+- Implemented shared feature engineering using **cyclical hour-of-day encoding** and **one-hot encoding of EPP commands**, with feature alignment between training and inference.
+- Added an **Isolation Forest** approach for unsupervised anomaly scoring and cross-model comparison.
+- Implemented **percentile-based threshold calibration**, alert-rate tuning, model-version configuration, and model-specific inference pipelines.
+- Integrated **MLflow** experiment tracking and **FastAPI** inference endpoints; added AWS deployment configuration using **SageMaker, Lambda, API Gateway, and Terraform**.
+- Developed a companion **Streamlit dashboard** for single-model analysis, side-by-side model comparison, MLflow experiment review, and simulated real-time alert visualization.
+
+**Skills / Technologies:** Python, XGBoost, scikit-learn, Pandas, NumPy, MLflow, FastAPI, Streamlit, AWS SageMaker, AWS Lambda, API Gateway, Terraform, Docker.
 
 ## 5. Professional Experience
 
