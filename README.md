@@ -1,16 +1,26 @@
 # Professional CV
 
-> Working outline. Content will be developed and reviewed section by section, starting at the end. Do not publish until reviewed.
-
 ## 1. Personal Information
 
-- **Name:** [To be provided]
-- **Photo:** [Optional — add later]
-- **Phone:** [To be provided]
-- **Email:** [To be provided]
-- **Location:** [To be provided]
-- **LinkedIn:** [To be provided]
-- **GitHub:** [To be provided]
+<div align="center">
+
+# Sridhar Samineni
+
+**Software Engineer · Systems Architecture · Security · Cloud · Applied AI**
+
+<sub>25+ years of hands-on engineering across systems software, enterprise platforms, distributed infrastructure, and emerging AI technologies</sub>
+
+<br><br>
+
+**[Location — to add]** &nbsp;·&nbsp; **[Email — to add]** &nbsp;·&nbsp; **[Phone — to add]**
+
+[LinkedIn — add profile] &nbsp;|&nbsp; [GitHub — add profile] &nbsp;|&nbsp; [AgentNebula](https://agentnebula.ai)
+
+</div>
+
+---
+
+<!-- Optional: add a professional photo later. Keep contact information and profile links current before publishing. -->
 
 ## 2. Professional Profile
 
