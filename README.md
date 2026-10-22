@@ -100,14 +100,35 @@
 
 [To be developed and reviewed.]
 
-### 5.6 Bharat Electronics — Central Research Laboratory
+### 5.6 Bharat Electronics Limited (BEL) — Central Research Laboratory
 
-**Designation:** [To verify]  
-**Employment period:** June 1999 – August 2000 [To verify]
+**Designation:** Research Staff — Cryptography Group  
+**Employment Period:** June 1999 – August 2000
 
-#### Projects
+**Role and Responsibilities**
+- Developed Linux-based software components for secure communication systems.
+- Implemented device-interface and data-processing functionality for research projects.
 
-[To be developed and reviewed.]
+**Projects**
+
+#### 5.6.1 Frame Relay Encryptor / Decryptor
+
+**Description:** Linux-based cryptographic interface for a Frame Relay communication system.
+
+**Technical Contributions:**
+- Developed a Linux device driver for the **MOXA C101** Frame Relay interface.
+- Worked on integrating encryption and decryption functionality with the Frame Relay communication path.
+
+#### 5.6.2 GPS-Based Vehicle Tracking
+
+**Description:** Vehicle-tracking application that processes GPS data.
+
+**Technical Contributions:**
+- Developed a GPS data parser for the vehicle-tracking application.
+
+**Skills / Technologies:** Linux, C, Linux device drivers, Frame Relay, cryptography, GPS data processing. [Confirm whether C was used for the GPS parser.]
+
+*Review pending: confirm project architecture, specific encryption algorithms, interfaces, implementation details, and results before publication.*
 
 ## 6. Education and Certifications
 
@@ -116,7 +137,7 @@
 **Master of Technology (M.Tech.) — Computer Science & Engineering**  
 Regional Engineering College, Warangal
 
-**Master’s Thesis:** Public Key Encryption Systems
+**Master’s Thesis:** Public Key Encryption Systems at **Advanced Numerical Research and Analysis Group (ANURAG), Hyderabad**
 
 ### 6.2 Certifications
 
