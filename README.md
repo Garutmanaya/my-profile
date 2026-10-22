@@ -43,7 +43,7 @@
 
 ## 5. Professional Experience
 
-### Verisign
+### 5.1 Verisign, Inc.
 
 **Designation:** [To verify]  
 **Employment period:** November 2011 – Present [To verify]
@@ -60,7 +60,7 @@
 
 [To be developed and reviewed.]
 
-### Smith Micro Software
+### 5.2 Smith Micro Software
 
 **Designation:** [To verify]  
 **Employment period:** July 2006 – September 2011 [To verify]
@@ -73,7 +73,7 @@
 
 [To be developed and reviewed.]
 
-### Verizon Data Services
+### 5.3 Verizon Data Services
 
 **Designation:** [To verify]  
 **Employment period:** October 2004 – July 2006 [To verify]
@@ -82,7 +82,7 @@
 
 [To be developed and reviewed.]
 
-### ActivCard
+### 5.4 ActivCard
 
 **Designation:** [To verify]  
 **Employment period:** January 2003 – June 2004 [To verify]
@@ -91,7 +91,7 @@
 
 [To be developed and reviewed.]
 
-### Ericsson
+### 5.5 Ericsson
 
 **Designation:** [To verify]  
 **Employment period:** August 2000 – January 2003 [To verify]
@@ -100,7 +100,7 @@
 
 [To be developed and reviewed.]
 
-### Bharat Electronics — Central Research Laboratory
+### 5.6 Bharat Electronics — Central Research Laboratory
 
 **Designation:** [To verify]  
 **Employment period:** June 1999 – August 2000 [To verify]
@@ -111,10 +111,13 @@
 
 ## 6. Education and Certifications
 
-### Education
+### 6.1 Education
 
-[To be developed and reviewed.]
+**Master of Technology (M.Tech.) — Computer Science & Engineering**  
+Regional Engineering College, Warangal
 
-### Certifications
+**Master’s Thesis:** Public Key Encryption Systems
 
-[To be developed and reviewed.]
+### 6.2 Certifications
+
+[Certifications to be verified and added during review.]
