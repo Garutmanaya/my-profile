@@ -60,18 +60,70 @@
 
 [To be developed and reviewed.]
 
-### 5.2 Smith Micro Software
+### 5.2 Smith Micro Software, Inc.
 
-**Designation:** [To verify]  
-**Employment period:** July 2006 – September 2011 [To verify]
+<table>
+<tbody>
+<tr><td><small><em>Organization</em></small></td><td><small>Smith Micro Software, Inc., Herndon, Virginia, USA</small></td></tr>
+<tr><td><small><em>Designation</em></small></td><td><small>Senior Software Engineer</small></td></tr>
+<tr><td><small><em>Employment Period</em></small></td><td><small>July 2006 – September 2011</small></td></tr>
+<tr><td><small><em>Role and Responsibilities</em></small></td><td><small>Contributed to the CTO team's evaluation and prototyping of emerging technologies and the design and implementation of client-side and server-side software. Developed secure mobile-device services, distributed server components, and enhancements to the QuickLink Mobile VPN Gateway, including platform integration, performance testing, and system security.</small></td></tr>
+<tr><td><small><em>Skills / Technologies</em></small></td><td><small>Linux, Android, Windows Mobile, Windows XP, Nokia IPSO, Java, C, C++, JNI, JSP, GWT, mvp4g, REST, JSON, Cassandra, Hector, memcachedb, HornetQ, EJBCA, Entrust SDK, Hibernate, GlassFish, MySQL, PostgreSQL, SQL/PLSQL, PHP, JavaScript, X.509v3, PKCS#8/#10/#12, TLS 1.2, OpenSSL, MobileIP, IPsec, IKEv1/IKEv2, iptables, Netfilter, LDAP, RADIUS, Active Directory, JMeter, Grinder, JProfiler, Linux Virtual Server, buildroot, JUnit, TestNG</small></td></tr>
+</tbody>
+</table>
 
-#### Project 1 — [Project name]
+**Projects**
 
-[To be developed and reviewed.]
+#### 5.2.1 SODA — Secure On-Device API
 
-#### Additional Projects
+**Description:** SODA provided a common interface for secure device communications across mobile broadband devices, manufacturers, chipset suppliers, and operating systems. Contributed to **SODA-WEB**, the remote device-management interface, and **SODA-CA**, the certificate authority component responsible for establishing device and service identities.
 
-[To be developed and reviewed.]
+**Technical Contributions:**
+- Developed the **SODA-WEB dashboard** using **Google Web Toolkit (GWT)** and the **mvp4g** Model–View–Presenter framework to support remote management and configuration of SODA-enabled devices through REST services.
+- Implemented **TLS mutual authentication** between SODA-WEB and the SODA server using OpenSSL APIs.
+- Evaluated **Entrust Security Manager** and the Entrust Java Security Toolkit, and assessed open-source certificate authorities including **OpenCA** and **EJBCA** for integration with the SODA platform.
+- Designed and implemented the **SODA-CA access layer** using EJBCA web services; extended EJBCA to support Smith Micro-specific X.509 certificate extensions.
+- Designed and implemented the **certificate issuance workflow**, including key generation, **PKCS#8** private-key storage, **PKCS#10** certificate signing requests with custom extensions, issuance of **X.509v3 certificates**, and creation of **PKCS#12** credential bundles.
+- Implemented a secure database API for accessing end-device **PKCS#12** information stored in **Cassandra**.
+
+#### 5.2.2 Mercury — Scalable Server Platform
+
+**Description:** Mercury was a shared server platform designed to consolidate Smith Micro's server-side products into a scalable, highly available architecture supporting multiple applications.
+
+**Technical Contributions:**
+- Contributed to a **layered application architecture** designed to accommodate multiple server applications with different functional requirements.
+- Implemented database-access layers for **memcachedb** and **Cassandra**.
+- Developed administrative user-interface components using **GWT WindowBuilder**.
+- Implemented **role-based access control (RBAC)** and strengthened host security using **iptables** and **SELinux** roles.
+- Built an isolated performance-test environment and executed load tests with **JMeter** and **Grinder**; used **JProfiler** to identify application bottlenecks and execution hotspots.
+- Tuned application-server, Linux operating-system, and JVM settings based on performance observations.
+
+#### 5.2.3 Cygnus — Secure Cloud File Delivery
+
+**Description:** Cygnus was a hosted file-delivery service for securely distributing large documents. The service supported file transfers of up to **2 GB**, recipient-specific access without requiring recipients to maintain accounts, and **AES-256** encryption.
+
+**Technical Contributions:**
+- Implemented **Java Native Interface (JNI)** bindings to proprietary Smith Micro compression and encryption libraries.
+- Designed the application database schema and implemented data access using **Cassandra** and the **Hector** client library.
+- Contributed to the **REST-based file-upload interface**.
+- Evaluated load-balancing and proxy technologies, including **Linux Virtual Server (LVS)**, **Squid**, **Varnish**, and **Zeus**.
+- Installed and configured an **LVS** test environment with separate VLANs, network-interface bonding, and jumbo frames; performed load testing reaching **up to 4 Gbps across eight nodes**.
+
+#### 5.2.4 QuickLink Mobile VPN Gateway
+
+**Description:** QuickLink Mobile VPN Gateway was a **MobileIP-based VPN solution** that maintained secure connectivity through dynamically established IPsec tunnels across changing networks and client devices. Work included gateway services, Linux and mobile clients, network appliances, authentication, availability, and operational tooling.
+
+**Technical Contributions:**
+- Designed and developed a **MySQL-based accounting and reporting subsystem** that recorded mobile-user sessions and traffic statistics and supported administrative reporting by user, department, access type, session duration, and bandwidth consumption.
+- Implemented a **Linux kernel traffic-logging module** using **iptables/Netfilter** and network-flow information, and developed a **PHP-based administration interface**.
+- Implemented **PostgreSQL-based real-time replication** of mobility-manager information to improve home-agent load balancing and mobile-node failover.
+- Ported **MobileIP** code to **Windows Mobile** and **Windows XP** for the **3GPP2 FMC client**.
+- Built customized Linux images for **QuickLink Mobility appliances (NXG500 and NXG5000)** and developed PHP-based appliance-configuration interfaces.
+- Designed and implemented the **QuickLink VPN client for Linux**.
+- Implemented a VPN-client simulator supporting **up to 5,000 simulated clients** for gateway stress testing.
+- Enhanced MobileIP agent functionality, including a **multithreaded SSL server**, mobile-node configuration generation, address management, **IKEv2 integration**, and **IP-over-UDP kernel-driver** work.
+- Contributed to load balancing, failover, and security improvements, including password protection, **TLS-secured intercomponent communication**, and authentication integration with **Microsoft Active Directory, OpenLDAP, RSA SecurID, and RADIUS**.
+- Ported gateway software to the **Nokia IPSO** platform and resolved product defects and customer-reported issues.
 
 ### 5.3 Verizon Data Services Technology Centre
 
