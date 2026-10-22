@@ -1,9 +1,0 @@
-title: Engineering Profile
-description: AI, Agentic AI, enterprise architecture and systems engineering
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-seo-tag
-exclude:
-  - scripts
-  - Gemfile.lock
