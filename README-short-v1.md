@@ -17,6 +17,27 @@ Software engineer with **25+ years of experience** designing and implementing sy
 - **AI/ML and agents:** A2A, A2UI, OPA/Rego, AuthZEN, Hugging Face Transformers, FLAN-T5, PEFT/LoRA, PyTorch, XGBoost, Isolation Forest, MLflow, FastAPI, Streamlit.
 - **Performance engineering:** EPP registry SLA analytics, production traffic analysis, workload modeling, distributed load generation, performance/scalability testing, latency histograms, release regression analysis.
 
+## Independent Engineering and Applied AI Projects
+
+### AgentNebula — Enterprise AI Agent Hub and Security Platform
+**Website:** https://agentnebula.ai · **Documentation:** https://docs.agentnebula.ai
+
+Independently architected and developed a modular platform for **AI-agent registration, discovery, lifecycle management, identity, OAuth security, PKI, and policy-based authorization**. Integrated the **official A2A Python SDK**, built reusable developer-facing Python packages, and implemented centralized authorization using **AuthZEN, Open Policy Agent (OPA), and Rego**. Developed an **A2UI Rich Catalog** package and agent integration examples. Emphasis on standards-based interoperability, modularity, and reuse of established open-source components. **MCP-related policy integration remains an investigation area.**
+
+**Published components:** `agent-nebula-sdk`, `agent-nebula-platform`, `agent-nebula-secureagent`, `agent-nebula-secureagent-examples` (PyPI/GitHub), and `@agent-nebula-npm/a2ui-rich` (npm).
+
+### EPP SLA — Natural Language to SQL Model Training
+
+Built a schema-aware Text-to-SQL pipeline with synthetic question/SQL generation, data augmentation, **FLAN-T5 fine-tuning using Hugging Face Transformers and PEFT/LoRA**, and model inference testing. Included optional S3 artifact synchronization and SageMaker deployment definitions.
+
+### EPP SLA — AI Business Intelligence Agent
+
+Developed a **Streamlit** analytics application that converts natural-language questions about EPP SLA data into SQL using configurable model backends, executes queries, and presents tables and interactive visualizations.
+
+### EPP SLA — Machine Learning Anomaly Detection
+
+Developed hourly SLA anomaly-detection approaches using **XGBoost regression residuals** and **Isolation Forest**, with feature engineering, threshold calibration, **MLflow** experiment tracking, **FastAPI** inference, and Streamlit visualization. Included AWS deployment configurations.
+
 ## Professional Experience
 
 ### Verisign, Inc. — Engineer IV
@@ -66,27 +87,6 @@ Enhanced **Tigris multiservice routers**, integrating an IKE stack, contributing
 **Bangalore, India | June 1999 – August 2000**
 
 Developed Linux cryptographic-driver components for a Frame Relay encryptor/decryptor and a GPS receiver interface for vehicle tracking.
-
-## Independent Engineering and Applied AI Projects
-
-### AgentNebula — Enterprise AI Agent Hub and Security Platform
-**Website:** https://agentnebula.ai · **Documentation:** https://docs.agentnebula.ai
-
-Independently architected and developed a modular platform for **AI-agent registration, discovery, lifecycle management, identity, OAuth security, PKI, and policy-based authorization**. Integrated the **official A2A Python SDK**, built reusable developer-facing Python packages, and implemented centralized authorization using **AuthZEN, Open Policy Agent (OPA), and Rego**. Developed an **A2UI Rich Catalog** package and agent integration examples. Emphasis on standards-based interoperability, modularity, and reuse of established open-source components. **MCP-related policy integration remains an investigation area.**
-
-**Published components:** `agent-nebula-sdk`, `agent-nebula-platform`, `agent-nebula-secureagent`, `agent-nebula-secureagent-examples` (PyPI/GitHub), and `@agent-nebula-npm/a2ui-rich` (npm).
-
-### EPP SLA — Natural Language to SQL Model Training
-
-Built a schema-aware Text-to-SQL pipeline with synthetic question/SQL generation, data augmentation, **FLAN-T5 fine-tuning using Hugging Face Transformers and PEFT/LoRA**, and model inference testing. Included optional S3 artifact synchronization and SageMaker deployment definitions.
-
-### EPP SLA — AI Business Intelligence Agent
-
-Developed a **Streamlit** analytics application that converts natural-language questions about EPP SLA data into SQL using configurable model backends, executes queries, and presents tables and interactive visualizations.
-
-### EPP SLA — Machine Learning Anomaly Detection
-
-Developed hourly SLA anomaly-detection approaches using **XGBoost regression residuals** and **Isolation Forest**, with feature engineering, threshold calibration, **MLflow** experiment tracking, **FastAPI** inference, and Streamlit visualization. Included AWS deployment configurations.
 
 ## Education
 
