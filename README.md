@@ -198,39 +198,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 
 **Description:** Architected and implemented a reusable, automated reporting framework used by **Sirius** for production SLA analysis and **PSTools** for performance-testing analytics. Both products share the underlying processing, report distribution, validation, persistence, and visualization patterns, with product-specific sources, reporting logic, and PostgreSQL schemas.
 
-**Reporting Pipeline**
-
-```text
-Production / Sirius                         Performance Testing / PSTools
-Daily production SLA logs                   Hourly test SLA logs and metrics
-           |                                            |
-           v                                            v
-    Production Hadoop                             Test Hadoop
-           |                                            |
-           +--------------+-----------------------------+
-                          |
-                          v
-             Pluggable Hive reporting
-           (queries, UDFs, report categories)
-                          |
-                          v
-                 OpenStack Swift
-                          |
-                          v
-                Automated report monitors
-                detect / download / validate
-                          |
-                          v
-                    PostgreSQL
-           (common table conventions;
-             product-specific schemas)
-                          |
-                          v
-                  Grafana dashboards
-
-Additional Sirius source: Hourly database metrics -> Swift
-                       -> DB metrics monitor -> validation -> PostgreSQL
-```
+**Reporting Pipeline:** Sirius processes daily production SLA logs in Hadoop using automated, pluggable Hive queries and UDFs. PSTools uses the same reporting framework to process hourly performance-test SLA logs and metrics in the test Hadoop environment, with additional test and release-analysis reports. Generated reports are published to OpenStack Swift, where automated monitors detect, download, validate, and load them into PostgreSQL for Grafana visualization. A separate Sirius workflow ingests hourly database metrics from Swift. Both products use standardized PostgreSQL table conventions and product-specific schemas.
 
 **Technical Contributions:**
 
@@ -304,6 +272,7 @@ Additional Sirius source: Hourly database metrics -> Swift
 | **Verisign Kubernetes Services (VKS)** | Developed Kubernetes manifests and **Helm charts** for deployment to Verisign's private Kubernetes clusters. |
 | **Database migration** | Migrated an approximately **800 GB** reporting database from **MySQL to PostgreSQL**. |
 | **Cloud-native PostgreSQL** | Transitioned PostgreSQL deployment to **CloudNativePG on Kubernetes**, preserving application and reporting integrations. |
+| **Distributed compute modernization** | Initially established and managed a dedicated Hadoop reporting cluster; subsequently migrated reporting computation to the organization-wide **Verisign Shared Compute Cluster (VSCC)**, eliminating the need for a separately managed reporting cluster. |
 | **Visualization** | Maintained **Grafana** reporting integrations and dashboards across infrastructure changes. |
 
 **Technical Contributions:**
@@ -311,26 +280,12 @@ Additional Sirius source: Hourly database metrics -> Swift
 - Planned and implemented deployment and configuration changes required to keep the reporting products operational across infrastructure migrations.
 - Automated environment provisioning, configuration management, and application deployment using Terraform, Ansible, Kubernetes manifests, and Helm charts.
 - Supported database migration and integration changes for large historical datasets and reporting pipelines.
+- Established and administered the initial dedicated Hadoop reporting environment, then transitioned Hive reporting and related compute workloads to **VSCC** as shared organizational infrastructure became available.
 - Maintained system operations, incident investigation, troubleshooting, enhancements, and technical documentation across the application lifecycle.
 
 **Skills / Technologies:** Linux, virtual machines, OpenStack, Terraform, Ansible, Kubernetes, Helm, CloudNativePG, MySQL, PostgreSQL, Grafana, infrastructure automation, database migration, deployment engineering.
 
-#### 5.1.6 P&S Hadoop Cluster — Registry Performance Analytics
-
-**Description:** Established a Hadoop-based test-environment analytics platform for examining production logs, designing representative test scenarios, and analyzing test execution logs for unusual performance behavior and trends. This work provided foundational distributed-processing capabilities for subsequent SLA reporting and analytics systems.
-
-**Technical Contributions:**
-
-- Installed, configured, and administered a **five-node Hadoop cluster**, configured for **60 mappers and 60 reducers** in the P&S test environment.
-- Automated **near-real-time ingestion with Apache Flume** and batch ingestion using scripts.
-- Developed **Java MapReduce jobs, Hive queries, and Hive UDFs** to report response times, registrar activity, domain-name trends, and TLD trends.
-- Automated export from **HDFS to MySQL** using **Sqoop**.
-- Evaluated **NextReports, Pentaho, and SpagoBI**; configured **Pentaho BI** and developed analysis reports.
-- Investigated **YSmart** for generating Java MapReduce programs from Hive queries.
-
-**Skills / Technologies:** Hadoop, HDFS, Java MapReduce, Hive, Hive UDFs, Flume, Sqoop, MySQL, Pentaho BI, distributed analytics.
-
-#### 5.1.7 Domain History Migration — Oracle to Cassandra
+#### 5.1.6 Domain History Migration — Oracle to Cassandra
 
 **Description:** Migrated historical domain-transaction records from Oracle to Cassandra to support multiple reporting views over registry domain-history data.
 
