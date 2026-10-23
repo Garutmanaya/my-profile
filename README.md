@@ -59,6 +59,9 @@ The descriptions distinguish implemented capabilities from experimental integrat
 
 ### 4.1 AgentNebula — Enterprise AI Agent Hub and Security Platform
 
+**Project Website:** [https://agentnebula.ai](https://agentnebula.ai)  
+**Technical Documentation:** [https://docs.agentnebula.ai](https://docs.agentnebula.ai)
+
 **Project Overview**
 
 Independently architected and developed **AgentNebula**, a modular enterprise AI-agent hub providing shared infrastructure for registering, discovering, securing, governing, and managing independently developed AI agents. The project addresses the challenge of integrating agents built with different frameworks and operated by different providers: each agent retains its own business logic while the platform supplies common registry, identity, trust, authentication, authorization, lifecycle, and administrative services.
@@ -126,8 +129,7 @@ The inventory below records technologies applied in AgentNebula or investigated 
 
 The hosted Core, OAuth, Policy, and other internal platform services are described as platform components; their source repositories are not presented as publicly available.
 
-**Project Website:** https://agentnebula.ai  
-**Technical Documentation:** https://docs.agentnebula.ai
+
 
 ### 4.2 EPP SLA — Natural Language to SQL Model Training
 
