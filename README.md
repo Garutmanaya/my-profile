@@ -51,25 +51,83 @@ More recently, expanded into **domain-specific natural-language-to-SQL model tra
 
 **Engineering Approach:** Research-driven, implementation-focused engineering combining low-level technical depth with system-wide architecture. Comfortable evaluating unfamiliar protocols, frameworks, and open-source packages, building proof-of-concept implementations, identifying integration boundaries, and developing working solutions across multiple technology stacks. This approach has been applied repeatedly—from cryptographic drivers and router security to scalable server platforms, distributed analytics, and AI-agent infrastructure.
 
-## 4. AI Learning and Independent Projects
+## 4. Applied AI, Machine Learning, and Independent Engineering Projects
 
-This section documents applied work in agent infrastructure, natural-language data access, machine learning, and model deployment. The EPP SLA projects below are described from the corresponding source repositories; production adoption and measured business outcomes are not claimed.
+This section presents independent, hands-on engineering work undertaken to extend established experience in enterprise software, distributed systems, networking, and security into **AI-agent infrastructure, machine learning, and natural-language applications**. Projects cover research and standards evaluation, architecture, implementation, integration, testing, packaging, and deployment. The focus is on building reusable software and evaluating emerging technologies against established protocols and open-source implementations.
 
-### 4.1 AgentNebula — Agent Infrastructure and Security Platform
+The descriptions distinguish implemented capabilities from experimental integrations and ongoing investigation. For the EPP SLA projects, repository implementations and deployment configurations are documented without implying production adoption or independently measured business outcomes.
 
-**Description:** Independent engineering project exploring infrastructure for registering, discovering, securing, and managing AI agents, with emphasis on interoperability and enterprise security controls.
+### 4.1 AgentNebula — Enterprise AI Agent Hub and Security Platform
 
-**Technical Contributions:**
-- Developed modular platform services for agent registration and discovery, resource lifecycle management, identity, authentication, authorization, PKI, and policy evaluation.
-- Integrated the official **A2A Python SDK** and developed agent-facing security integration components, including OAuth-related services and an **OPA/Rego-backed authorization policy service using AuthZEN**.
-- Explored agent orchestration, skills, and user-interface integration as part of an extensible agent platform architecture.
+**Project Overview**
 
-**Skills / Technologies:** Python, A2A, OAuth 2.0, AuthZEN, Open Policy Agent (OPA), Rego, PKI, REST APIs, agent architecture.
+Independently architected and developed **AgentNebula**, a modular enterprise AI-agent hub providing shared infrastructure for registering, discovering, securing, governing, and managing independently developed AI agents. The project addresses the challenge of integrating agents built with different frameworks and operated by different providers: each agent retains its own business logic while the platform supplies common registry, identity, trust, authentication, authorization, lifecycle, and administrative services.
 
-**Website:** https://agentnebula.ai  
-**Documentation:** https://docs.agentnebula.ai
+AgentNebula is designed around **standards-based interoperability, service separation, and reuse of mature open-source components**. Its developer-facing packages support A2A agents without requiring application developers to recreate protocol handling and security mechanisms. The project includes hosted platform services, client integration libraries, example agents, user interfaces, documentation, and deployment tooling. It is an independent engineering project; enterprise customer adoption or quantified production outcomes are not claimed.
 
-*AgentNebula details will be reviewed separately against its current repositories.*
+**Architecture and Major Components**
+
+| Component | Responsibility and Engineering Scope |
+|:---|:---|
+| **Core / Agent Registry** | Agent registration, Agent Card metadata, publisher/provider relationships, catalog and capability information, and platform administration APIs. |
+| **Agent Discovery** | Agent lookup and capability-oriented discovery through registry information and published agent metadata. |
+| **Resource Lifecycle** | Resource identity, ownership relationships, lifecycle states, and administrative operations for managed agent resources. |
+| **Identity and Authentication** | Account and client identities, authentication integration, credentials, and protected platform operations. |
+| **OAuth Server** | OAuth authorization-server capabilities, client management, token issuance, and integration with centralized authorization decisions. |
+| **Policy Server** | Policy decision service using **Open Policy Agent (OPA)** and **Rego**, with an **AuthZEN**-based authorization interface. |
+| **PKI and Trust** | Certificate-authority functions, X.509 agent certificates, trust bundles, and TLS/mTLS-related integration. |
+| **Gateway and APIs** | REST-based platform interfaces, gateway routing, and service integration. |
+| **Audit, Health, and Telemetry** | Audit events, health monitoring, diagnostic information, and operational observability capabilities. |
+| **AgentNebula SDK** | Reusable Python security primitives and integration components for OAuth, JOSE, token validation, and sender-constrained authentication. |
+| **AgentNebula Platform** | Pluggable middleware connecting developer-facing agent applications, the official A2A Python SDK, and security/integration components. |
+| **AgentNebula SecureAgent** | Configuration-driven developer interface for building A2A agents while separating business skills from protocol and security infrastructure. |
+| **SecureAgent Examples** | Executable A2A/A2UI agent examples and integration scenarios, including standalone and platform-integrated demonstrations. |
+| **A2UI Rich Catalog** | Reusable JavaScript/TypeScript visual components for agent-driven A2UI presentation, extending the basic catalog where richer semantics are needed. |
+| **Portal, Explorer, and Playground** | Administration and onboarding, agent discovery and interaction, and agent experimentation/development interfaces. |
+| **Build, Installer, and Documentation** | Container packaging, configuration, repeatable deployment workflows, and architecture/developer documentation. |
+
+**Engineering Contributions**
+
+- **End-to-end platform architecture:** Designed service boundaries for agent registry and discovery, lifecycle management, identity, authentication, OAuth, authorization policy, PKI, administration, and observability; integrated the services through documented APIs and configuration.
+- **Agent interoperability:** Adopted the **official A2A Python SDK** for A2A protocol behavior, rather than maintaining a parallel custom protocol implementation. Worked with Agent Cards, skills/capability metadata, agent invocation, and agent-facing integration boundaries.
+- **OAuth and token security:** Built OAuth-related services and reusable client/resource-server security components, including token handling, validation, and integration with protected resources and policy decisions. Investigated and integrated modern OAuth security mechanisms such as sender-constrained access using **DPoP**.
+- **Centralized authorization:** Implemented a policy service backed by **OPA/Rego** and exposed through **AuthZEN** conventions, separating authorization decisions from the services that enforce them. Explored agent-specific policy requirements for A2A and MCP scenarios; emerging agent-specific policy standards remain an investigation area.
+- **Identity and PKI:** Developed agent and organizational identity management, certificate issuance and trust-management capabilities, and TLS/mTLS integration points.
+- **Reusable developer components:** Developed and published **AgentNebula SDK**, **AgentNebula Platform**, and **SecureAgent** as layered Python packages: security primitives, pluggable agent middleware, and a simplified developer-facing interface.
+- **Developer examples and testing:** Published executable examples and integration scenarios for A2A and A2UI workflows, with examples that can be run independently of the hosted registry as well as platform-connected scenarios.
+- **Dynamic agent UI:** Investigated A2UI protocol integration and developed the **AgentNebula A2UI Rich Catalog**, a reusable npm package for richer agent-driven UI components.
+- **Operational tooling:** Built platform administration and discovery interfaces, diagnostic/trace capabilities, service packaging, deployment configuration, and supporting technical documentation.
+- **Open-source evaluation:** Evaluated and integrated existing standards implementations and open-source packages to reduce custom code, preserve clear boundaries, and avoid duplicating mature protocol functionality.
+
+**Protocols, Standards, and Technical Skills**
+
+The inventory below records technologies applied in AgentNebula or investigated as part of its design. Items explicitly marked *investigated* are not claims of completed production integration.
+
+| Area | Protocols, Standards, Frameworks, and Skills |
+|:---|:---|
+| **AI agents and interoperability** | Agent2Agent (**A2A**) protocol, official A2A Python SDK, Agent Cards, agent capabilities and skills, A2A client/server integration, agent registration and discovery, agent lifecycle management; **MCP** policy/integration requirements (*investigated*). |
+| **Agent presentation** | Agent-to-User Interface (**A2UI**), Basic and Rich Catalog concepts, structured UI payloads, React-oriented component rendering, JavaScript/TypeScript, npm package publication. |
+| **OAuth and API security** | **OAuth 2.0**, OAuth authorization-server/client/resource-server responsibilities, bearer tokens, JWT, JOSE, JWK/JWKS, protected-resource metadata, client authentication, token validation, **DPoP (RFC 9449)**, **Resource Indicators (RFC 8707)**, **JWT Access Token Profile (RFC 9068)**, **private_key_jwt**. |
+| **Authorization and policy** | **AuthZEN**, **Open Policy Agent (OPA)**, **Rego**, policy-as-code, policy decision and enforcement separation, centralized authorization, contextual policy evaluation, agent-oriented policy design. |
+| **Identity, trust, and cryptography** | **PKI**, **X.509**, certificate authorities, certificate signing and issuance, certificate lifecycle, trust bundles, **TLS/mTLS**, digital signatures, credential management. |
+| **Architecture and APIs** | Python, modular/service-oriented architecture, REST/JSON APIs, API gateways, pluggable middleware, configuration-driven components, asynchronous agent integration, resource ownership and lifecycle models. |
+| **Data and infrastructure** | PostgreSQL, relational schema design, Docker, Linux, Nginx, Cloudflare Tunnel, OCI VM deployment, configuration templates, deployment automation. |
+| **Engineering and distribution** | Git/GitHub, Python packaging, **PyPI**, **uv**, **npm**, automated/integration testing, MkDocs, API and architecture documentation, open-source dependency evaluation. |
+
+**Published Developer Components**
+
+| Component | Distribution | Purpose |
+|:---|:---|:---|
+| **agent-nebula-sdk** | [PyPI](https://pypi.org/project/agent-nebula-sdk/) · [GitHub](https://github.com/Garutmanaya/agent-nebula-sdk) | Standards-oriented Python security SDK. |
+| **agent-nebula-platform** | [PyPI](https://pypi.org/project/agent-nebula-platform/) · [GitHub](https://github.com/Garutmanaya/agent-nebula-platform) | Pluggable A2A/security middleware. |
+| **agent-nebula-secureagent** | [PyPI](https://pypi.org/project/agent-nebula-secureagent/) · [GitHub](https://github.com/Garutmanaya/agent-nebula-secureagent) | Simplified interface for secure A2A agent development. |
+| **agent-nebula-secureagent-examples** | [PyPI](https://pypi.org/project/agent-nebula-secureagent-examples/) · [GitHub](https://github.com/Garutmanaya/agent-nebula-secureagent-examples) | Executable agent examples and integration tests. |
+| **@agent-nebula-npm/a2ui-rich** | [npm](https://www.npmjs.com/package/@agent-nebula-npm/a2ui-rich) | Reusable A2UI Rich Catalog components. |
+
+The hosted Core, OAuth, Policy, and other internal platform services are described as platform components; their source repositories are not presented as publicly available.
+
+**Project Website:** https://agentnebula.ai  
+**Technical Documentation:** https://docs.agentnebula.ai
 
 ### 4.2 EPP SLA — Natural Language to SQL Model Training
 
