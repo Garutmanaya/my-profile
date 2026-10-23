@@ -177,48 +177,176 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 <table>
 <tbody>
 <tr><td><small><em>Organization</em></small></td><td><small>Verisign, Inc., Reston, Virginia, USA</small></td></tr>
-<tr><td><small><em>Designation</em></small></td><td><small>Engineer III (designation in original resume; current title to confirm)</small></td></tr>
-<tr><td><small><em>Employment Period</em></small></td><td><small>November 2011 – Present</small></td></tr>
-<tr><td><small><em>Role and Responsibilities</em></small></td><td><small>Designed and implemented tools for performance and scalability testing of Verisign registry products. Developed test automation, data-processing pipelines, and reporting capabilities to analyze registry transaction logs, assess response-time behavior, and support test-environment operations.</small></td></tr>
-<tr><td><small><em>Skills / Technologies</em></small></td><td><small>Linux, Java, GWT, Spring, Spring Expression Language, Hadoop, HDFS, MapReduce, Hive, Hive UDFs, Sqoop, Flume, Cassandra, Pig, MySQL, REST, JSON, Rundeck, Pentaho BI, Grinder, JProfiler, Ant, RPM</small></td></tr>
+<tr><td><small><em>Designation</em></small></td><td><small>Engineer IV</small></td></tr>
+<tr><td><small><em>Employment Period</em></small></td><td><small>November 2011 – October 2025</small></td></tr>
+<tr><td><small><em>Role and Responsibilities</em></small></td><td><small>End-to-end technical ownership of registry SLA analytics, production reporting, performance-testing analytics, and load-generation tools. Responsibilities spanned requirements analysis, solution architecture, implementation, integration, data engineering, deployment automation, operational support, continuous enhancement, and documentation. Analyzed production EPP traffic and correlated gateway, application, database, and network measurements to investigate abnormal registrar activity and SLA degradation; translated observed production workloads into representative performance and scalability tests.</small></td></tr>
+<tr><td><small><em>Skills / Technologies</em></small></td><td><small>Linux, Java, Python, SQL, PostgreSQL, MySQL, CloudNativePG, Kubernetes, Helm, OpenStack, Terraform, Ansible, Hadoop, HDFS, Hive, Hive UDFs, MapReduce, Flume, Sqoop, OpenStack Swift, Grafana, Cassandra, Oracle, GWT, Spring, Spring Expression Language, REST/JSON, Rundeck, Pentaho BI, Grinder, JProfiler, Ant, RPM, EPP, SLA analysis, performance engineering, ETL, and infrastructure automation.</small></td></tr>
 </tbody>
 </table>
 
-**Projects**
+**Principal Responsibilities and Engineering Scope**
 
-#### 5.1.1 Domain History Migration — Oracle to Cassandra
+- **Registry SLA analysis and root-cause investigation:** Analyzed production EPP transaction logs, command response-time distributions, release histograms, registrar-specific traffic patterns, transaction volumes, and service-level deviations. Correlated **gateway SLA, application SLA, database SLA and system metrics, and network latency** to isolate likely sources of degradation and identify abnormal registrar activity.
+- **End-to-end technical product ownership:** Gathered requirements; designed architecture and database models; implemented features and integrations; maintained and enhanced applications; automated deployments and reporting workflows; troubleshot operational issues; and produced technical and operational documentation.
+- **Production-informed performance testing:** Converted observed registry traffic characteristics into representative workload scenarios for supported TLDs, including **.com, .net, .cc, and .tv**, and analyzed throughput limits, latency deviations, breaking points, and release regressions or improvements.
+- **Reporting and analytics engineering:** Developed automated pipelines, extensible Hive reports, relational data models, and Grafana dashboards providing multidimensional views by registrar, TLD, IP version, gateway type, EPP command, and software release.
+- **Infrastructure and database modernization:** Supported the evolution from virtual-machine deployments to **OpenStack** with **Terraform/Ansible**, then to **Verisign Kubernetes Services (VKS)** with manifests and Helm charts; migrated an approximately **800 GB** reporting database from **MySQL to PostgreSQL**, followed by deployment on **CloudNativePG**.
 
-**Description:** Migrated historical domain-transaction records from an Oracle database to Cassandra to support multiple reporting views over domain history data.
+**Projects and Technical Contributions**
+
+#### 5.1.1 Shared SLA Data Processing and Reporting Architecture
+
+**Description:** Architected and implemented a reusable, automated reporting framework used by **Sirius** for production SLA analysis and **PSTools** for performance-testing analytics. Both products share the underlying processing, report distribution, validation, persistence, and visualization patterns, with product-specific sources, reporting logic, and PostgreSQL schemas.
+
+**Reporting Pipeline**
+
+```text
+Production / Sirius                         Performance Testing / PSTools
+Daily production SLA logs                   Hourly test SLA logs and metrics
+           |                                            |
+           v                                            v
+    Production Hadoop                             Test Hadoop
+           |                                            |
+           +--------------+-----------------------------+
+                          |
+                          v
+             Pluggable Hive reporting
+           (queries, UDFs, report categories)
+                          |
+                          v
+                 OpenStack Swift
+                          |
+                          v
+                Automated report monitors
+                detect / download / validate
+                          |
+                          v
+                    PostgreSQL
+           (common table conventions;
+             product-specific schemas)
+                          |
+                          v
+                  Grafana dashboards
+
+Additional Sirius source: Hourly database metrics -> Swift
+                       -> DB metrics monitor -> validation -> PostgreSQL
+```
 
 **Technical Contributions:**
+
+- Designed the complete reporting workflow, from log availability and scheduled data processing through report publication, automated ingestion, persistence, and dashboard visualization.
+- Created a **pluggable Hive reporting architecture**: adding a new report required adding a directory with its Hive query, without modifying the core orchestration workflow.
+- Developed Hive queries and user-defined functions for multiple SLA report categories, supporting investigation of traffic anomalies, service-level deviations, and performance trends.
+- Automated Hive report generation when the corresponding source SLA logs became available in Hadoop.
+- Implemented report-monitoring services to detect newly published files in **OpenStack Swift**, download and validate them, and load results into PostgreSQL.
+- Implemented a separate **hourly database-metrics ingestion path**, with Swift monitoring, download, validation, and database loading.
+- Designed the **common PostgreSQL reporting data model**, standardizing shared fields and table conventions across reporting categories; represented each reporting product through its own PostgreSQL schema while retaining the reusable structure.
+- Extended the shared framework with performance-testing-specific reports and release-comparison analytics without duplicating the underlying ingestion and storage architecture.
+
+**Skills / Technologies:** Hadoop, HDFS, Hive, Hive UDFs, SQL, OpenStack Swift, PostgreSQL, data modeling, ETL, automated ingestion, extensible reporting frameworks, Grafana, distributed data processing.
+
+#### 5.1.2 Sirius — Production Registry SLA Analytics and Reporting
+
+**Description:** Production registry SLA reporting platform maintaining approximately **15 years of historical SLA metrics**. Sirius supports multidimensional production analysis across registrars, IP versions, gateway types, TLDs, EPP commands, and software releases, with correlation of application, gateway, database, and network performance indicators.
+
+**Technical Contributions:**
+
+- Developed and maintained the production reporting pipeline: **daily SLA logs → Hadoop → automated Hive reports → Swift → report monitors → PostgreSQL → Grafana**.
+- Implemented numerous pluggable Hive reports for SLA measurements and category-specific analysis, including views useful for identifying registrar anomalies and investigating performance deviations.
+- Automated the processing of available production logs and end-to-end report generation and ingestion.
+- Implemented **hourly database metrics** processing: metrics published to Swift were detected, downloaded, validated, and loaded into PostgreSQL through a dedicated monitor.
+- Developed historical reporting and Grafana dashboards to compare trends, distributions, EPP command response-time histograms, and release behavior.
+- Investigated potential sources of SLA degradation by correlating registrar traffic with **gateway, application, database, and network** measurements.
+- Managed requirements, enhancements, deployment, troubleshooting, operational maintenance, and documentation throughout the product lifecycle.
+
+**Skills / Technologies:** EPP, SLA analytics, Hadoop, Hive, Hive UDFs, OpenStack Swift, PostgreSQL, Grafana, historical metrics, production monitoring, root-cause analysis.
+
+#### 5.1.3 PSTools — Performance Testing Analytics and Release Reporting Portal
+
+**Description:** Consolidated performance-testing reporting portal presenting load-test results, test SLA measurements, gateway/application performance, database SLA and system metrics, release reports, and EPP command latency distributions. PSTools is used to examine **performance deviations, bottlenecks, breaking points, and release degradations or improvements**.
+
+**Technical Contributions:**
+
+- Adapted the shared Sirius reporting framework for the **test environment**, with test SLA logs and metrics uploaded **hourly to a dedicated Hadoop cluster**.
+- Automated Hive report generation, Swift publication, report monitoring, validation, and PostgreSQL loading for test measurements.
+- Developed additional reports for load-test analysis, throughput behavior, performance limits, and software-release comparisons.
+- Implemented consolidated **Grafana dashboards** combining load-testing SLA metrics, database metrics, application and gateway measurements, and historical test results.
+- Developed release-comparison views and **EPP command response-time histograms** to expose regressions, improvements, latency shifts, and breaking points.
+- Used the common PostgreSQL reporting data model with a **PSTools-specific schema**, preserving compatibility with the shared processing and ingestion components.
+- Maintained and enhanced the reporting portal, deployment configurations, supporting environments, and documentation.
+
+**Skills / Technologies:** Grafana, PostgreSQL, Hadoop, Hive, OpenStack Swift, EPP, performance testing, SLA metrics, database performance analysis, release regression analysis, visualization.
+
+#### 5.1.4 PSUTF — P&S Unified Testing Framework
+
+**Description:** Designed and implemented a centralized, extensible load-generation framework for performance and scalability testing of Verisign registry products, including **Core, CTLD, and Name Suggestion**. PSUTF supports configurable, repeatable test scenarios that simulate representative production EPP workloads across supported TLDs, including **.com, .net, .cc, and .tv**.
+
+**Technical Contributions:**
+
+- Analyzed test requirements and designed and implemented the modular load-generation framework, including reusable commands and configurable data types.
+- Developed extensible **command and data-bean components** using **Spring** and **Spring Expression Language (SpEL)**, allowing new commands and data types to be configured without modifying core framework logic.
+- Implemented a centralized **JSON/REST configuration manager** and reusable scenario configuration.
+- Developed **PSWeb**, a **GWT-based** interface displaying active test-run statistics through REST/JSON services.
+- Implemented service-management scripts for the framework's **manager, agent, and console** components; developed **Ant** builds and **RPM** packaging specifications.
+- Evaluated, installed, and configured **Rundeck** to automate installation, configuration updates, service-status checks, and test-environment maintenance.
+- Maintained and enhanced workload simulation and testing infrastructure to reflect evolving production patterns and release-testing requirements.
+
+**Skills / Technologies:** Java, Spring, SpEL, GWT, REST/JSON, Linux, Bash, Ant, RPM, Rundeck, EPP, workload modeling, distributed load generation, performance and scalability testing.
+
+#### 5.1.5 Infrastructure and Database Modernization
+
+**Description:** Maintained and evolved the deployment, data-storage, and operational infrastructure for registry SLA reporting and performance-testing applications through successive infrastructure generations.
+
+| Evolution | Engineering Contributions |
+|:---|:---|
+| **Virtual machines** | Deployed, configured, maintained, and troubleshot application and reporting environments. |
+| **OpenStack** | Developed **Terraform** provisioning and **Ansible** configuration/deployment automation; integrated reporting workflows with **Swift** object storage. |
+| **Verisign Kubernetes Services (VKS)** | Developed Kubernetes manifests and **Helm charts** for deployment to Verisign's private Kubernetes clusters. |
+| **Database migration** | Migrated an approximately **800 GB** reporting database from **MySQL to PostgreSQL**. |
+| **Cloud-native PostgreSQL** | Transitioned PostgreSQL deployment to **CloudNativePG on Kubernetes**, preserving application and reporting integrations. |
+| **Visualization** | Maintained **Grafana** reporting integrations and dashboards across infrastructure changes. |
+
+**Technical Contributions:**
+
+- Planned and implemented deployment and configuration changes required to keep the reporting products operational across infrastructure migrations.
+- Automated environment provisioning, configuration management, and application deployment using Terraform, Ansible, Kubernetes manifests, and Helm charts.
+- Supported database migration and integration changes for large historical datasets and reporting pipelines.
+- Maintained system operations, incident investigation, troubleshooting, enhancements, and technical documentation across the application lifecycle.
+
+**Skills / Technologies:** Linux, virtual machines, OpenStack, Terraform, Ansible, Kubernetes, Helm, CloudNativePG, MySQL, PostgreSQL, Grafana, infrastructure automation, database migration, deployment engineering.
+
+#### 5.1.6 P&S Hadoop Cluster — Registry Performance Analytics
+
+**Description:** Established a Hadoop-based test-environment analytics platform for examining production logs, designing representative test scenarios, and analyzing test execution logs for unusual performance behavior and trends. This work provided foundational distributed-processing capabilities for subsequent SLA reporting and analytics systems.
+
+**Technical Contributions:**
+
+- Installed, configured, and administered a **five-node Hadoop cluster**, configured for **60 mappers and 60 reducers** in the P&S test environment.
+- Automated **near-real-time ingestion with Apache Flume** and batch ingestion using scripts.
+- Developed **Java MapReduce jobs, Hive queries, and Hive UDFs** to report response times, registrar activity, domain-name trends, and TLD trends.
+- Automated export from **HDFS to MySQL** using **Sqoop**.
+- Evaluated **NextReports, Pentaho, and SpagoBI**; configured **Pentaho BI** and developed analysis reports.
+- Investigated **YSmart** for generating Java MapReduce programs from Hive queries.
+
+**Skills / Technologies:** Hadoop, HDFS, Java MapReduce, Hive, Hive UDFs, Flume, Sqoop, MySQL, Pentaho BI, distributed analytics.
+
+#### 5.1.7 Domain History Migration — Oracle to Cassandra
+
+**Description:** Migrated historical domain-transaction records from Oracle to Cassandra to support multiple reporting views over registry domain-history data.
+
+**Technical Contributions:**
+
 - Automated extraction and loading of historical transaction data using **Apache Sqoop**.
 - Designed and implemented multiple **Apache Hive schemas**, using **bucketing** to organize data for reporting and analysis.
 
-#### 5.1.2 P&S Hadoop Cluster — Registry Performance Analytics
+**Skills / Technologies:** Oracle, Cassandra, Hadoop, Hive, Sqoop, SQL, database migration, distributed data processing.
 
-**Description:** Established a Hadoop-based test-environment analytics platform for examining production logs, designing representative test scenarios, and analyzing test execution logs for unusual performance behavior and trends.
+**Consolidated Skills and Technologies**
 
-**Technical Contributions:**
-- Installed, configured, and administered a **five-node Hadoop cluster**, configured for **60 mappers and 60 reducers** in the P&S test environment.
-- Automated **near-real-time ingestion with Apache Flume** and batch ingestion using scripts.
-- Developed **Java MapReduce jobs, Hive queries, and Hive user-defined functions (UDFs)** to produce reports on response times, registrar activity, domain-name trends, and top-level domain (TLD) trends.
-- Automated data export from **HDFS to MySQL** using **Sqoop**.
-- Evaluated open-source business-intelligence tools, including **NextReports, Pentaho, and SpagoBI**; configured **Pentaho BI** and developed reports presenting analysis results.
-- Investigated **YSmart** as a possible approach to generating Java MapReduce programs from Hive queries.
-
-#### 5.1.3 PSUTF — P&S Unified Testing Framework
-
-**Description:** Designed a centralized, extensible load-generation framework for performance and scalability testing of Verisign registry products, including **Core, CTLD, and Name Suggestion**. The framework used dynamic, JSON-based configuration to support reusable test scenarios and pluggable commands and data types.
-
-**Technical Contributions:**
-- Analyzed requirements and designed and implemented the **testing framework**.
-- Developed extensible **command and data-bean components** using **Spring** and **Spring Expression Language (SpEL)**, allowing additional command and data types to be configured without modifying framework code.
-- Implemented a centralized **configuration manager** using **JSON and REST**.
-- Developed **PSWeb**, a **GWT-based** interface for monitoring statistics from active test runs through REST/JSON services.
-- Created service-management shell scripts for the framework's **manager, agent, and console** components; implemented **Ant** build scripts and **RPM** packaging specifications.
-- Evaluated, installed, and configured **Rundeck** to automate operational tasks, including software installation, configuration updates, service-status checks, and test-environment maintenance.
-
-<!-- Additional Verisign projects developed after the original resume (including EPP SLA analytics/AI work, AWS/OpenStack deployments, and Kubernetes) will be added only after their responsibilities and implementation details are reviewed. -->
+- **Registry and performance engineering:** EPP, registrar traffic analysis, SLA monitoring, cross-layer root-cause analysis, production workload modeling, load generation, performance/scalability testing, throughput and latency analysis, EPP histograms, release regression analysis.
+- **Data engineering and reporting:** Hadoop, HDFS, Hive, Hive UDFs, Java MapReduce, Flume, Sqoop, OpenStack Swift, ETL, pluggable report frameworks, automated ingestion, Grafana, Pentaho BI.
+- **Databases and infrastructure:** PostgreSQL, MySQL, CloudNativePG, Cassandra, Oracle, relational schema design, ~800 GB database migration, Linux, virtual machines, OpenStack, VKS/Kubernetes, Terraform, Ansible, Helm.
+- **Application development and operations:** Java, Python, SQL, Spring, SpEL, GWT, REST/JSON, Bash, Rundeck, Ant, RPM, JProfiler, Grinder, requirements engineering, architecture, implementation, deployment, enhancements, operational support, and documentation.
 
 ### 5.2 Smith Micro Software, Inc.
 
