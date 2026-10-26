@@ -14,13 +14,13 @@
 
 **[Location — to add]** &nbsp;·&nbsp; **[Email — to add]** &nbsp;·&nbsp; **[Phone — to add]**
 
-[LinkedIn — add profile] &nbsp;|&nbsp; [GitHub — add profile] &nbsp;|&nbsp; [AgentNebula](https://agentnebula.ai)
+[GitHub](https://github.com/Garutmanaya) &nbsp;|&nbsp; [AgentNebula](https://agentnebula.ai)
 
 </div>
 
 ---
 
-<!-- Optional: add a professional photo later. Keep contact information and profile links current before publishing. -->
+<!-- Optional: add a professional photo later. Keep contact information current before publishing. -->
 
 ## 2. Professional Profile
 
