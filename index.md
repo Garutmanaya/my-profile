@@ -17,7 +17,7 @@ title: Professional CV — Sridhar Samineni
 
 <br><br>
 
-**[Location — to add]** &nbsp;·&nbsp; **[Email — to add]** &nbsp;·&nbsp; **[Phone — to add]**
+**[Location — Herndon,VA]** &nbsp;·&nbsp; **[Email — SSamineni009@gmail.com]** &nbsp;·&nbsp; **[Phone — 703.459.0473]**
 
 [GitHub](https://github.com/Garutmanaya) &nbsp;|&nbsp; [AgentNebula](https://agentnebula.ai)
 
