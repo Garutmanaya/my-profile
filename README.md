@@ -2,25 +2,18 @@
 
 ## 1. Personal Information
 
-<div align="center">
-
-# Sridhar Samineni
+### Sridhar Samineni
 
 **Software Engineer · Systems Architecture · Security · Cloud · Applied AI**
 
-<sub>25+ years of hands-on engineering across systems software, enterprise platforms, distributed infrastructure, and emerging AI technologies</sub>
+25+ years of hands-on engineering across systems software, enterprise platforms, distributed infrastructure, and emerging AI technologies.
 
-<br><br>
-
-**[Location — to add]** &nbsp;·&nbsp; **[Email — to add]** &nbsp;·&nbsp; **[Phone — to add]**
-
-[GitHub](https://github.com/Garutmanaya) &nbsp;|&nbsp; [AgentNebula](https://agentnebula.ai)
-
-</div>
+**Location:** Herndon, VA  
+**Email:** SSamineni009@gmail.com  
+**Phone:** 703.459.0473  
+**Profiles:** [GitHub](https://github.com/Garutmanaya) · [AgentNebula](https://agentnebula.ai)
 
 ---
-
-<!-- Optional: add a professional photo later. Keep contact information current before publishing. -->
 
 ## 2. Professional Profile
 

@@ -1,31 +1,25 @@
 ---
 layout: default
-title: Professional CV — Sridhar Samineni
+title: Sridhar Samineni — Professional CV
+description: Software Engineering, Systems Architecture, Security, Cloud and Applied AI
 ---
 
 # Professional CV
 
 ## 1. Personal Information
 
-<div align="center">
-
-# Sridhar Samineni
+### Sridhar Samineni
 
 **Software Engineer · Systems Architecture · Security · Cloud · Applied AI**
 
-<sub>25+ years of hands-on engineering across systems software, enterprise platforms, distributed infrastructure, and emerging AI technologies</sub>
+25+ years of hands-on engineering across systems software, enterprise platforms, distributed infrastructure, and emerging AI technologies.
 
-<br><br>
-
-**[Location — Herndon,VA]** &nbsp;·&nbsp; **[Email — SSamineni009@gmail.com]** &nbsp;·&nbsp; **[Phone — 703.459.0473]**
-
-[GitHub](https://github.com/Garutmanaya) &nbsp;|&nbsp; [AgentNebula](https://agentnebula.ai)
-
-</div>
+**Location:** Herndon, VA  
+**Email:** SSamineni009@gmail.com  
+**Phone:** 703.459.0473  
+**Profiles:** [GitHub](https://github.com/Garutmanaya) · [AgentNebula](https://agentnebula.ai)
 
 ---
-
-<!-- Optional: add a professional photo later. Keep contact information current before publishing. -->
 
 ## 2. Professional Profile
 
