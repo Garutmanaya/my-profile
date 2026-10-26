@@ -482,4 +482,4 @@ Regional Engineering College, Warangal
 
 ### 6.2 Certifications
 
-[Certifications to be verified and added during review.]
+**Cloudera Certified Developer for Apache Hadoop (CCD-410)** — Exam passed September 2013; certification expired.
