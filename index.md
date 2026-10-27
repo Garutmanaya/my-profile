@@ -176,7 +176,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 <table>
 <tbody>
 <tr><td><small><em>Organization</em></small></td><td><small>Verisign, Inc., Reston, Virginia, USA</small></td></tr>
-<tr><td><small><em>Designation</em></small></td><td><small>Engineer IV</small></td></tr>
+<tr><td><small><em>Designation</em></small></td><td><small>SRE IV</small></td></tr>
 <tr><td><small><em>Employment Period</em></small></td><td><small>November 2011 – October 2025</small></td></tr>
 <tr><td><small><em>Role and Responsibilities</em></small></td><td><small>End-to-end technical ownership of registry SLA analytics, production reporting, performance-testing analytics, and load-generation tools. Responsibilities spanned requirements analysis, solution architecture, implementation, integration, data engineering, deployment automation, operational support, continuous enhancement, and documentation. Analyzed production EPP traffic and correlated gateway, application, database, and network measurements to investigate abnormal registrar activity and SLA degradation; translated observed production workloads into representative performance and scalability tests.</small></td></tr>
 <tr><td><small><em>Skills / Technologies</em></small></td><td><small>Linux, Java, Python, SQL, PostgreSQL, MySQL, CloudNativePG, Kubernetes, Helm, OpenStack, Terraform, Ansible, Hadoop, HDFS, Hive, Hive UDFs, MapReduce, Flume, Sqoop, OpenStack Swift, Grafana, Cassandra, Oracle, GWT, Spring, Spring Expression Language, REST/JSON, Rundeck, Pentaho BI, Grinder, JProfiler, Ant, RPM, EPP, SLA analysis, performance engineering, ETL, and infrastructure automation.</small></td></tr>
