@@ -40,7 +40,7 @@ Developed hourly SLA anomaly-detection approaches using **XGBoost regression res
 
 ## Professional Experience
 
-### Verisign, Inc. — Engineer IV
+### Verisign, Inc. — SRE IV
 **Reston, Virginia | November 2011 – October 2025**
 
 Held end-to-end technical responsibility for registry **production SLA analytics, performance-testing reporting, and load-generation products**, including requirements analysis, architecture, implementation, data engineering, deployment automation, maintenance, enhancements, and documentation. Analyzed EPP traffic and abnormal registrar behavior; correlated **gateway, application, database, and network** measurements to investigate SLA degradation. Designed production-informed workloads for testing registry services across TLDs including **.com, .net, .cc, and .tv**.
