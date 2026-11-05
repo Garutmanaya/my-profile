@@ -10,7 +10,6 @@
 
 **Location:** Herndon, VA  
 **Email:** SSamineni009@gmail.com  
-**Phone:** 703.459.0473  
 **Profiles:** [GitHub](https://github.com/Garutmanaya) · [AgentNebula](https://agentnebula.ai)
 
 ---
