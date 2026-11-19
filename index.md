@@ -1,9 +1,3 @@
----
-layout: default
-title: Sridhar Samineni — Professional CV
-description: Software Engineering, Systems Architecture, Security, Cloud and Applied AI
----
-
 # Professional CV
 
 ## 1. Personal Information
@@ -12,50 +6,32 @@ description: Software Engineering, Systems Architecture, Security, Cloud and App
 
 **Software Engineer · Systems Architecture · Security · Cloud · Applied AI**
 
-25+ years of hands-on engineering across systems software, enterprise platforms, distributed infrastructure, and emerging AI technologies.
-
 **Location:** Herndon, VA  
 **Email:** SSamineni009@gmail.com  
-**Profiles:** [GitHub](https://github.com/Garutmanaya) · [AgentNebula](https://agentnebula.ai)
-
----
+**Profiles:** [GitHub](https://github.com/Garutmanaya) · [AgentNebula](https://agentnebula.ai) · [Technical Documentation](https://docs.agentnebula.ai)  
+**Resume:** [Professional Profile](https://garutmanaya.github.io/my-profile/)
 
 ## 2. Professional Profile
 
-Software engineer and technology-focused product developer with **over 25 years of hands-on experience** designing, implementing, integrating, and validating software across embedded systems, network security, enterprise platforms, distributed data systems, cloud infrastructure, and applied AI. Experience ranges from **Linux kernel drivers, IPsec/IKE, cryptographic protocols, and PKI** to **scalable server architectures, Hadoop/Cassandra analytics, machine-learning pipelines, and AI-agent infrastructure**.
+Software engineer and systems architect with **25+ years of experience** delivering security-sensitive software, enterprise applications, distributed systems, data platforms, and cloud infrastructure. Independently translate high-level requirements into solution architectures, working prototypes, integrated applications, and deployable systems. Engineering experience spans C/C++ systems programming, Java enterprise services, Python development, network security, PKI, authentication, performance engineering, and applied AI.
 
-Strong record of translating technical requirements into working systems through **independent research, architecture design, open-source evaluation, rapid prototyping, and implementation**. Contributions include router security and hardware-assisted IPsec processing; smart-card middleware and authentication; mobile VPN gateways; certificate-authority integration; distributed server and data platforms; performance-testing frameworks; and operational analytics. Work spans low-level C/C++ development, Java enterprise systems, and Python-based AI/ML applications.
+Designed and implemented systems across the full engineering lifecycle: requirements analysis, technology evaluation, architecture, implementation, testing, integration, performance validation, packaging, deployment, and operational troubleshooting. At Verisign, developed registry SLA analytics and performance-testing systems and supported modernization of data platforms and application infrastructure. Earlier engineering work included smart-card authentication, mobile VPN gateways, certificate-authority integration, network-security protocols, and cryptographic software.
 
-More recently, expanded into **domain-specific natural-language-to-SQL model training, XGBoost-based anomaly detection, and AI-agent security and interoperability**. Developed AgentNebula as an independent engineering project to explore agent registration, discovery, lifecycle management, identity, OAuth, PKI, and policy-based authorization using A2A, AuthZEN, and OPA.
+Independently developed **AgentNebula**, a secure AI-agent platform combining standards-based A2A interoperability, agent discovery, OAuth 2.0, PKI, policy-based authorization with OPA/Rego and AuthZEN, reusable Python SDKs, and containerized deployment. Built multi-agent business solutions and AI/ML applications for natural-language data access and anomaly detection.
 
-**Engineering strengths:** Ability to move between unfamiliar technology domains, identify and reuse mature open-source components, define clear integration boundaries, and build and troubleshoot complex software from protocol and infrastructure layers through application interfaces. Emphasis on maintainable architecture, security, performance, and practical delivery rather than technology adoption for its own sake.
+**Core engineering capabilities:** End-to-end solution delivery; modular architecture; backend and systems programming; secure API and agent integration; data engineering; cloud and on-premises deployment; prototyping and technical evaluation; performance and operational analysis.
 
 ## 3. Technical Expertise
 
-**Engineering Breadth:** Over 25 years of hands-on software engineering across embedded systems, Linux kernel and networking, cryptography and PKI, enterprise applications, distributed data platforms, cloud infrastructure, and applied machine learning. Experience spans requirements analysis, technology evaluation, architecture, prototyping, implementation, integration, performance validation, deployment, and operational troubleshooting. Particularly experienced in selecting and integrating established open-source components to build maintainable systems without unnecessary custom infrastructure.
+- **AI Agents and Applied ML:** A2A Python SDK, Agent Cards, discovery, orchestration, A2UI, MCP, RAG, LangChain, LangGraph, LangSmith, Google ADK, PostgreSQL/pgvector, vector search, FLAN-T5, Hugging Face Transformers, PEFT/LoRA, PyTorch, XGBoost, Isolation Forest, MLflow, Text-to-SQL.
+- **Security, Identity and Policy:** OAuth 2.0, JWT/JWKS, JOSE, DPoP, private_key_jwt, OPA/Rego, AuthZEN, RBAC, PKI, X.509, TLS/mTLS, OpenSSL, PKCS#8/#10/#11/#12, Kerberos, PAM, LDAP, Active Directory, RADIUS, IPsec/IKE, VPN.
+- **Backend and Systems:** Python, FastAPI, Java, C/C++, SQL/PLSQL, Bash, JavaScript, Perl, PHP, REST/JSON, distributed systems, SDKs, Linux kernel modules/drivers, sockets, multithreading, performance engineering.
+- **Cloud and Infrastructure:** AWS (S3, SageMaker, Lambda, API Gateway), Docker, Kubernetes, CloudNativePG, OpenStack, Terraform, Ansible, Helm, Linux, Grafana, Rundeck, JMeter, Grinder, JProfiler.
+- **Data and Enterprise Platforms:** PostgreSQL, MySQL, Oracle, Cassandra, HBase, SQLite, Hadoop/HDFS, Hive, MapReduce, Sqoop, Flume, Pig, ZooKeeper, Oozie, Spring, GWT, Tomcat, GlassFish.
 
-| *Area* | *Technical Expertise* |
-|:---|:---|
-| **Software Architecture & Product Engineering** | End-to-end design and implementation of security-sensitive and data-intensive applications; modular and layered architectures; REST APIs and service integration; extensible frameworks and plugin interfaces; high availability, scalability, performance testing, and technical prototyping. Experience developing complete software components from initial investigation through integration, packaging, and validation. |
-| **Programming & Development** | Python, C, C++, Java, SQL/PLSQL, shell scripting (Bash, awk, sed), Perl, JavaScript, PHP; multithreading, sockets, JNI, Linux system APIs, Java enterprise applications, test automation, and API development. |
-| **Linux, Embedded Systems & Networking** | Linux kernel modules and device drivers, Netfilter/iptables hooks, network protocol implementation, embedded Linux and customized bootable images, Linux administration, process and application tuning, TCP/IP diagnostics, packet analysis, VPN clients and gateways, MobileIP, IPsec/IKE, L2TP, and network appliances. Tools include tcpdump, Wireshark, netstat/ss, and nmap. |
-| **Security, Identity & Cryptography** | PKI and X.509 certificate lifecycle, certificate authorities (EJBCA, Entrust, OpenCA evaluation), PKCS#8/#10/#11/#12, OpenSSL, TLS/mTLS, OAuth 2.0, JWT-based security, authentication and authorization, smart cards and ISO 7816 APDUs, Linux PAM, Kerberos, Active Directory, LDAP, RADIUS, SCEP/OCSP investigation, IPsec/IKEv1/IKEv2, hardware-assisted cryptography, and role-based access control. |
-| **AI Agents & Agent Infrastructure** | Independent AgentNebula platform engineering: agent registration, discovery and lifecycle management; official A2A Python SDK integration; agent identity and security integration; OAuth services; policy evaluation with AuthZEN, Open Policy Agent (OPA), and Rego; PKI and trust infrastructure; agent orchestration and skill-selection experiments. MCP integration is an area of ongoing investigation, not a claimed completed implementation. |
-| **Machine Learning & Natural-Language Systems** | Domain-specific natural-language-to-SQL model training and inference; synthetic training-data generation, schema-aware prompts, linguistic augmentation, FLAN-T5 fine-tuning with Hugging Face Transformers and PEFT/LoRA; PyTorch; XGBoost regression-based anomaly detection, Isolation Forest, feature engineering, threshold calibration, model comparison, and MLflow experiment tracking. |
-| **Cloud, Containers & Deployment Engineering** | AWS-related application and ML deployment engineering, including SageMaker, Lambda, API Gateway, S3, and Terraform infrastructure definitions; Docker-based packaging; Kubernetes and OpenStack experience. Cloud deployment experience should be differentiated by project during the final review; repository infrastructure definitions are not presented as evidence of production operation. |
-| **Distributed Data, Big Data & Databases** | Hadoop ecosystem (HDFS, MapReduce, Hive and UDFs, Sqoop, Flume, Pig, ZooKeeper, Oozie), Hadoop cluster setup and administration, Oracle-to-Cassandra data migration, Cassandra and HBase application development, PostgreSQL, MySQL, Oracle, SQLite, memcachedb, data ingestion pipelines, operational analytics, and reporting. |
-| **Enterprise Applications & Integration** | Java/J2EE, Spring and Spring Expression Language, GWT and MVP/mvp4g, REST/JSON, JSP, GlassFish, Tomcat, Apache HTTP Server, database integration, certificate-management interfaces, enterprise reporting, and service-oriented application design. Experience with HornetQ and Hazelcast. |
-| **Performance, Reliability & Engineering Tools** | Load and stress testing with JMeter and Grinder; Java profiling with JProfiler; Linux/JVM/application-server tuning; Linux Virtual Server and load-balancer evaluation; network and system troubleshooting; Rundeck workflow automation; Ant/RPM build and packaging; Git-based development, test environments, and reproducible deployment workflows. |
+## 4. Independent Engineering and Applied AI Projects
 
-**Engineering Approach:** Research-driven, implementation-focused engineering combining low-level technical depth with system-wide architecture. Comfortable evaluating unfamiliar protocols, frameworks, and open-source packages, building proof-of-concept implementations, identifying integration boundaries, and developing working solutions across multiple technology stacks. This approach has been applied repeatedly—from cryptographic drivers and router security to scalable server platforms, distributed analytics, and AI-agent infrastructure.
-
-## 4. Applied AI, Machine Learning, and Independent Engineering Projects
-
-This section presents independent, hands-on engineering work undertaken to extend established experience in enterprise software, distributed systems, networking, and security into **AI-agent infrastructure, machine learning, and natural-language applications**. Projects cover research and standards evaluation, architecture, implementation, integration, testing, packaging, and deployment. The focus is on building reusable software and evaluating emerging technologies against established protocols and open-source implementations.
-
-The descriptions distinguish implemented capabilities from experimental integrations and ongoing investigation. For the EPP SLA projects, repository implementations and deployment configurations are documented without implying production adoption or independently measured business outcomes.
-
-### 4.1 AgentNebula — Enterprise AI Agent Hub and Security Platform
+### 4.1 AgentNebula — Secure AI Agent Platform and Security Architecture
 
 **Project Website:** [https://agentnebula.ai](https://agentnebula.ai)  
 **Technical Documentation:** [https://docs.agentnebula.ai](https://docs.agentnebula.ai)
@@ -64,7 +40,7 @@ The descriptions distinguish implemented capabilities from experimental integrat
 
 Independently architected and developed **AgentNebula**, a modular enterprise AI-agent hub providing shared infrastructure for registering, discovering, securing, governing, and managing independently developed AI agents. The project addresses the challenge of integrating agents built with different frameworks and operated by different providers: each agent retains its own business logic while the platform supplies common registry, identity, trust, authentication, authorization, lifecycle, and administrative services.
 
-AgentNebula is designed around **standards-based interoperability, service separation, and reuse of mature open-source components**. Its developer-facing packages support A2A agents without requiring application developers to recreate protocol handling and security mechanisms. The project includes hosted platform services, client integration libraries, example agents, user interfaces, documentation, and deployment tooling. It is an independent engineering project; enterprise customer adoption or quantified production outcomes are not claimed.
+AgentNebula combines **standards-based interoperability, service separation, and reusable security components**. The platform includes hosted services, Python integration libraries, example agents, administration interfaces, technical documentation, and deployment tooling.
 
 **Architecture and Major Components**
 
@@ -90,23 +66,23 @@ AgentNebula is designed around **standards-based interoperability, service separ
 **Engineering Contributions**
 
 - **End-to-end platform architecture:** Designed service boundaries for agent registry and discovery, lifecycle management, identity, authentication, OAuth, authorization policy, PKI, administration, and observability; integrated the services through documented APIs and configuration.
-- **Agent interoperability:** Adopted the **official A2A Python SDK** for A2A protocol behavior, rather than maintaining a parallel custom protocol implementation. Worked with Agent Cards, skills/capability metadata, agent invocation, and agent-facing integration boundaries.
+- **Agent interoperability:** Adopted the **official A2A Python SDK** for A2A protocol behavior, to provide standards-based protocol behavior. Worked with Agent Cards, skills/capability metadata, agent invocation, and agent-facing integration boundaries.
 - **OAuth and token security:** Built OAuth-related services and reusable client/resource-server security components, including token handling, validation, and integration with protected resources and policy decisions. Investigated and integrated modern OAuth security mechanisms such as sender-constrained access using **DPoP**.
-- **Centralized authorization:** Implemented a policy service backed by **OPA/Rego** and exposed through **AuthZEN** conventions, separating authorization decisions from the services that enforce them. Explored agent-specific policy requirements for A2A and MCP scenarios; emerging agent-specific policy standards remain an investigation area.
+- **Centralized authorization:** Implemented a policy service backed by **OPA/Rego** and exposed through **AuthZEN** conventions, separating authorization decisions from the services that enforce them. Designed agent-specific authorization policies for discovery and inter-agent communication.
 - **Identity and PKI:** Developed agent and organizational identity management, certificate issuance and trust-management capabilities, and TLS/mTLS integration points.
 - **Reusable developer components:** Developed and published **AgentNebula SDK**, **AgentNebula Platform**, and **SecureAgent** as layered Python packages: security primitives, pluggable agent middleware, and a simplified developer-facing interface.
 - **Developer examples and testing:** Published executable examples and integration scenarios for A2A and A2UI workflows, with examples that can be run independently of the hosted registry as well as platform-connected scenarios.
-- **Dynamic agent UI:** Investigated A2UI protocol integration and developed the **AgentNebula A2UI Rich Catalog**, a reusable npm package for richer agent-driven UI components.
+- **Dynamic agent UI:** Integrated A2UI concepts and developed the **AgentNebula A2UI Rich Catalog**, a reusable npm package for richer agent-driven UI components.
 - **Operational tooling:** Built platform administration and discovery interfaces, diagnostic/trace capabilities, service packaging, deployment configuration, and supporting technical documentation.
 - **Open-source evaluation:** Evaluated and integrated existing standards implementations and open-source packages to reduce custom code, preserve clear boundaries, and avoid duplicating mature protocol functionality.
 
 **Protocols, Standards, and Technical Skills**
 
-The inventory below records technologies applied in AgentNebula or investigated as part of its design. Items explicitly marked *investigated* are not claims of completed production integration.
+Key technologies and protocols used across the platform architecture and engineering work:
 
 | Area | Protocols, Standards, Frameworks, and Skills |
 |:---|:---|
-| **AI agents and interoperability** | Agent2Agent (**A2A**) protocol, official A2A Python SDK, Agent Cards, agent capabilities and skills, A2A client/server integration, agent registration and discovery, agent lifecycle management; **MCP** policy/integration requirements (*investigated*). |
+| **AI agents and interoperability** | Agent2Agent (**A2A**) protocol, official A2A Python SDK, Agent Cards, agent capabilities and skills, A2A client/server integration, agent registration and discovery, agent lifecycle management; MCP. |
 | **Agent presentation** | Agent-to-User Interface (**A2UI**), Basic and Rich Catalog concepts, structured UI payloads, React-oriented component rendering, JavaScript/TypeScript, npm package publication. |
 | **OAuth and API security** | **OAuth 2.0**, OAuth authorization-server/client/resource-server responsibilities, bearer tokens, JWT, JOSE, JWK/JWKS, protected-resource metadata, client authentication, token validation, **DPoP (RFC 9449)**, **Resource Indicators (RFC 8707)**, **JWT Access Token Profile (RFC 9068)**, **private_key_jwt**. |
 | **Authorization and policy** | **AuthZEN**, **Open Policy Agent (OPA)**, **Rego**, policy-as-code, policy decision and enforcement separation, centralized authorization, contextual policy evaluation, agent-oriented policy design. |
@@ -125,13 +101,25 @@ The inventory below records technologies applied in AgentNebula or investigated 
 | **agent-nebula-secureagent-examples** | [PyPI](https://pypi.org/project/agent-nebula-secureagent-examples/) · [GitHub](https://github.com/Garutmanaya/agent-nebula-secureagent-examples) | Executable agent examples and integration tests. |
 | **@agent-nebula-npm/a2ui-rich** | [npm](https://www.npmjs.com/package/@agent-nebula-npm/a2ui-rich) | Reusable A2UI Rich Catalog components. |
 
-The hosted Core, OAuth, Policy, and other internal platform services are described as platform components; their source repositories are not presented as publicly available.
+### 4.2 AgentNebula Solutions — Secure Agentic AI Applications
 
+Designed and implemented business applications using the **AgentNebula secure architecture**, integrating A2A discovery and communication, orchestration, identity and authorization, business APIs, and AI/ML inference services.
 
+#### Inventory Replenishment
 
-### 4.2 EPP SLA — Natural Language to SQL Model Training
+Developed cooperating agents for inventory monitoring, demand planning, supplier selection, and purchasing coordination. Integrated specialized business services through agent discovery, secure communication, and orchestrated workflows.
 
-**Description:** Developed a domain-specific Text-to-SQL training pipeline that translates natural-language questions about Extensible Provisioning Protocol (EPP) service-level metrics into SQL queries. The project uses schema-aware prompts and synthetic training examples to investigate specialized model adaptation for operational analytics.
+#### Travel Mobility
+
+Built coordinated airline, hotel, and parking agents supporting travel-planning workflows, service discovery, and interactive A2A/A2UI exchanges.
+
+#### EPP Intelligence — Registry Analytics and AI/ML
+
+Developed an agent-based registry intelligence solution combining SLA analysis, natural-language database queries, and abnormal traffic detection. Integrated specialized agents with model inference, data services, and reporting interfaces.
+
+#### EPP Intelligence — Natural Language to SQL
+
+**Description:** Developed a domain-specific Text-to-SQL training pipeline that translates natural-language questions about Extensible Provisioning Protocol (EPP) service-level metrics into SQL queries. The project uses schema-aware prompts and synthetic training examples for domain-specific operational analytics.
 
 **Technical Contributions:**
 - Implemented a configurable **synthetic question/SQL-pair generator** using EPP database schemas, query templates, filtering and aggregation rules, and SQLite-based SQL validation.
@@ -142,7 +130,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 
 **Skills / Technologies:** Python, PyTorch, FLAN-T5, Hugging Face Transformers, PEFT/LoRA, natural-language processing, Text-to-SQL, SQLite, Pandas, Amazon S3, AWS SageMaker, Terraform.
 
-### 4.3 EPP SLA — AI Business Intelligence Agent
+#### EPP Intelligence — AI Business Intelligence Agent
 
 **Description:** Developed an interactive analytics application that accepts natural-language questions about EPP transaction volumes, response times, failures, registrar activity, and release impacts; generates SQL through a selected language-model backend; and presents query results as tables and visualizations.
 
@@ -154,7 +142,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 
 **Skills / Technologies:** Python, Streamlit, SQLite, Pandas, Plotly, REST APIs, Text-to-SQL, language-model integration, Amazon S3.
 
-### 4.4 EPP SLA — Machine Learning Anomaly Detection
+#### EPP Intelligence — Anomaly Detection
 
 **Description:** Designed a multi-model anomaly-detection system for hourly EPP service-level metrics, including successful and failed transaction volumes and response-time measurements. The system evaluates deviations from expected operating patterns and supports comparison of supervised and unsupervised approaches.
 
@@ -177,7 +165,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 <tr><td><small><em>Organization</em></small></td><td><small>Verisign, Inc., Reston, Virginia, USA</small></td></tr>
 <tr><td><small><em>Designation</em></small></td><td><small>SRE IV</small></td></tr>
 <tr><td><small><em>Employment Period</em></small></td><td><small>November 2011 – October 2025</small></td></tr>
-<tr><td><small><em>Role and Responsibilities</em></small></td><td><small>End-to-end technical ownership of registry SLA analytics, production reporting, performance-testing analytics, and load-generation tools. Responsibilities spanned requirements analysis, solution architecture, implementation, integration, data engineering, deployment automation, operational support, continuous enhancement, and documentation. Analyzed production EPP traffic and correlated gateway, application, database, and network measurements to investigate abnormal registrar activity and SLA degradation; translated observed production workloads into representative performance and scalability tests.</small></td></tr>
+<tr><td><small><em>Engineering Scope</em></small></td><td><small>End-to-end technical ownership of registry SLA analytics, production reporting, performance-testing analytics, and load-generation tools. Responsibilities spanned requirements analysis, solution architecture, implementation, integration, data engineering, deployment automation, operational support, continuous enhancement, and documentation. Analyzed production EPP traffic and correlated gateway, application, database, and network measurements to investigate abnormal registrar activity and SLA degradation; translated observed production workloads into representative performance and scalability tests.</small></td></tr>
 <tr><td><small><em>Skills / Technologies</em></small></td><td><small>Linux, Java, Python, SQL, PostgreSQL, MySQL, CloudNativePG, Kubernetes, Helm, OpenStack, Terraform, Ansible, Hadoop, HDFS, Hive, Hive UDFs, MapReduce, Flume, Sqoop, OpenStack Swift, Grafana, Cassandra, Oracle, GWT, Spring, Spring Expression Language, REST/JSON, Rundeck, Pentaho BI, Grinder, JProfiler, Ant, RPM, EPP, SLA analysis, performance engineering, ETL, and infrastructure automation.</small></td></tr>
 </tbody>
 </table>
@@ -198,7 +186,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 
 **Reporting Pipeline:** Sirius processes daily production SLA logs in Hadoop using automated, pluggable Hive queries and UDFs. PSTools uses the same reporting framework to process hourly performance-test SLA logs and metrics in the test Hadoop environment, with additional test and release-analysis reports. Generated reports are published to OpenStack Swift, where automated monitors detect, download, validate, and load them into PostgreSQL for Grafana visualization. A separate Sirius workflow ingests hourly database metrics from Swift. Both products use standardized PostgreSQL table conventions and product-specific schemas.
 
-**Technical Contributions:**
+**Engineering Contributions:**
 
 - Designed the complete reporting workflow, from log availability and scheduled data processing through report publication, automated ingestion, persistence, and dashboard visualization.
 - Created a **pluggable Hive reporting architecture**: adding a new report required adding a directory with its Hive query, without modifying the core orchestration workflow.
@@ -215,7 +203,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 
 **Description:** Production registry SLA reporting platform maintaining approximately **15 years of historical SLA metrics**. Sirius supports multidimensional production analysis across registrars, IP versions, gateway types, TLDs, EPP commands, and software releases, with correlation of application, gateway, database, and network performance indicators.
 
-**Technical Contributions:**
+**Engineering Contributions:**
 
 - Developed and maintained the production reporting pipeline: **daily SLA logs → Hadoop → automated Hive reports → Swift → report monitors → PostgreSQL → Grafana**.
 - Implemented numerous pluggable Hive reports for SLA measurements and category-specific analysis, including views useful for identifying registrar anomalies and investigating performance deviations.
@@ -231,7 +219,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 
 **Description:** Consolidated performance-testing reporting portal presenting load-test results, test SLA measurements, gateway/application performance, database SLA and system metrics, release reports, and EPP command latency distributions. PSTools is used to examine **performance deviations, bottlenecks, breaking points, and release degradations or improvements**.
 
-**Technical Contributions:**
+**Engineering Contributions:**
 
 - Adapted the shared Sirius reporting framework for the **test environment**, with test SLA logs and metrics uploaded **hourly to a dedicated Hadoop cluster**.
 - Automated Hive report generation, Swift publication, report monitoring, validation, and PostgreSQL loading for test measurements.
@@ -247,7 +235,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 
 **Description:** Designed and implemented a centralized, extensible load-generation framework for performance and scalability testing of Verisign registry products, including **Core, CTLD, and Name Suggestion**. PSUTF supports configurable, repeatable test scenarios that simulate representative production EPP workloads across supported TLDs, including **.com, .net, .cc, and .tv**.
 
-**Technical Contributions:**
+**Engineering Contributions:**
 
 - Analyzed test requirements and designed and implemented the modular load-generation framework, including reusable commands and configurable data types.
 - Developed extensible **command and data-bean components** using **Spring** and **Spring Expression Language (SpEL)**, allowing new commands and data types to be configured without modifying core framework logic.
@@ -273,7 +261,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 | **Distributed compute modernization** | Initially established and managed a dedicated Hadoop reporting cluster; subsequently migrated reporting computation to the organization-wide **Verisign Shared Compute Cluster (VSCC)**, eliminating the need for a separately managed reporting cluster. |
 | **Visualization** | Maintained **Grafana** reporting integrations and dashboards across infrastructure changes. |
 
-**Technical Contributions:**
+**Engineering Contributions:**
 
 - Planned and implemented deployment and configuration changes required to keep the reporting products operational across infrastructure migrations.
 - Automated environment provisioning, configuration management, and application deployment using Terraform, Ansible, Kubernetes manifests, and Helm charts.
@@ -287,7 +275,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 
 **Description:** Migrated historical domain-transaction records from Oracle to Cassandra to support multiple reporting views over registry domain-history data.
 
-**Technical Contributions:**
+**Engineering Contributions:**
 
 - Automated extraction and loading of historical transaction data using **Apache Sqoop**.
 - Designed and implemented multiple **Apache Hive schemas**, using **bucketing** to organize data for reporting and analysis.
@@ -308,7 +296,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 <tr><td><small><em>Organization</em></small></td><td><small>Smith Micro Software, Inc., Herndon, Virginia, USA</small></td></tr>
 <tr><td><small><em>Designation</em></small></td><td><small>Senior Software Engineer</small></td></tr>
 <tr><td><small><em>Employment Period</em></small></td><td><small>July 2006 – September 2011</small></td></tr>
-<tr><td><small><em>Role and Responsibilities</em></small></td><td><small>Contributed to the CTO team's evaluation and prototyping of emerging technologies and the design and implementation of client-side and server-side software. Developed secure mobile-device services, distributed server components, and enhancements to the QuickLink Mobile VPN Gateway, including platform integration, performance testing, and system security.</small></td></tr>
+<tr><td><small><em>Engineering Scope</em></small></td><td><small>Contributed to the CTO team's evaluation and prototyping of emerging technologies and the design and implementation of client-side and server-side software. Developed secure mobile-device services, distributed server components, and enhancements to the QuickLink Mobile VPN Gateway, including platform integration, performance testing, and system security.</small></td></tr>
 <tr><td><small><em>Skills / Technologies</em></small></td><td><small>Linux, Android, Windows Mobile, Windows XP, Nokia IPSO, Java, C, C++, JNI, JSP, GWT, mvp4g, REST, JSON, Cassandra, Hector, memcachedb, HornetQ, EJBCA, Entrust SDK, Hibernate, GlassFish, MySQL, PostgreSQL, SQL/PLSQL, PHP, JavaScript, X.509v3, PKCS#8/#10/#12, TLS 1.2, OpenSSL, MobileIP, IPsec, IKEv1/IKEv2, iptables, Netfilter, LDAP, RADIUS, Active Directory, JMeter, Grinder, JProfiler, Linux Virtual Server, buildroot, JUnit, TestNG</small></td></tr>
 </tbody>
 </table>
@@ -319,7 +307,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 
 **Description:** SODA provided a common interface for secure device communications across mobile broadband devices, manufacturers, chipset suppliers, and operating systems. Contributed to **SODA-WEB**, the remote device-management interface, and **SODA-CA**, the certificate authority component responsible for establishing device and service identities.
 
-**Technical Contributions:**
+**Engineering Contributions:**
 - Developed the **SODA-WEB dashboard** using **Google Web Toolkit (GWT)** and the **mvp4g** Model–View–Presenter framework to support remote management and configuration of SODA-enabled devices through REST services.
 - Implemented **TLS mutual authentication** between SODA-WEB and the SODA server using OpenSSL APIs.
 - Evaluated **Entrust Security Manager** and the Entrust Java Security Toolkit, and assessed open-source certificate authorities including **OpenCA** and **EJBCA** for integration with the SODA platform.
@@ -331,7 +319,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 
 **Description:** Mercury was a shared server platform designed to consolidate Smith Micro's server-side products into a scalable, highly available architecture supporting multiple applications.
 
-**Technical Contributions:**
+**Engineering Contributions:**
 - Contributed to a **layered application architecture** designed to accommodate multiple server applications with different functional requirements.
 - Implemented database-access layers for **memcachedb** and **Cassandra**.
 - Developed administrative user-interface components using **GWT WindowBuilder**.
@@ -343,7 +331,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 
 **Description:** Cygnus was a hosted file-delivery service for securely distributing large documents. The service supported file transfers of up to **2 GB**, recipient-specific access without requiring recipients to maintain accounts, and **AES-256** encryption.
 
-**Technical Contributions:**
+**Engineering Contributions:**
 - Implemented **Java Native Interface (JNI)** bindings to proprietary Smith Micro compression and encryption libraries.
 - Designed the application database schema and implemented data access using **Cassandra** and the **Hector** client library.
 - Contributed to the **REST-based file-upload interface**.
@@ -354,7 +342,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 
 **Description:** QuickLink Mobile VPN Gateway was a **MobileIP-based VPN solution** that maintained secure connectivity through dynamically established IPsec tunnels across changing networks and client devices. Work included gateway services, Linux and mobile clients, network appliances, authentication, availability, and operational tooling.
 
-**Technical Contributions:**
+**Engineering Contributions:**
 - Designed and developed a **MySQL-based accounting and reporting subsystem** that recorded mobile-user sessions and traffic statistics and supported administrative reporting by user, department, access type, session duration, and bandwidth consumption.
 - Implemented a **Linux kernel traffic-logging module** using **iptables/Netfilter** and network-flow information, and developed a **PHP-based administration interface**.
 - Implemented **PostgreSQL-based real-time replication** of mobility-manager information to improve home-agent load balancing and mobile-node failover.
@@ -373,7 +361,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 <tr><td><small><em>Organization</em></small></td><td><small>Verizon Data Services Technology Centre, Tampa, Florida, USA</small></td></tr>
 <tr><td><small><em>Designation</em></small></td><td><small>Software Analyst</small></td></tr>
 <tr><td><small><em>Employment Period</em></small></td><td><small>October 2004 – July 2006</small></td></tr>
-<tr><td><small><em>Role and Responsibilities</em></small></td><td><small>Developed, maintained, and enhanced modules within RequestNet, Verizon’s enterprise system for managing high-capacity telecommunications service requests, with particular responsibility for reporting, critical-date calculations, and QueryNet functionality.</small></td></tr>
+<tr><td><small><em>Engineering Scope</em></small></td><td><small>Developed, maintained, and enhanced modules within RequestNet, Verizon’s enterprise system for managing high-capacity telecommunications service requests, with particular responsibility for reporting, critical-date calculations, and QueryNet functionality.</small></td></tr>
 <tr><td><small><em>Skills / Technologies</em></small></td><td><small>Linux, C++, Java, SQL, PL/SQL, Oracle 8i, Sun iPlanet Server, JSP, JavaScript, Perl</small></td></tr>
 </tbody>
 </table>
@@ -384,7 +372,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 
 **Description:** RequestNet was an enterprise pre-provisioning system that provided a centralized web-based entry point for field sales and customer service personnel to submit and track requests for high-capacity telecommunications services. The system supported facility verification, request processing, and communication of service installation availability to the originating teams.
 
-**Technical Contributions:**
+**Engineering Contributions:**
 - Developed and maintained **reporting modules** supporting the processing and visibility of service requests.
 - Implemented enhancements to **critical-date calculation** functionality used in service-request workflows.
 - Maintained and enhanced **QueryNet** modules within the RequestNet application.
@@ -396,7 +384,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 <tr><td><small><em>Organization</em></small></td><td><small>ActivCard Software Private Limited, Hyderabad, India</small></td></tr>
 <tr><td><small><em>Designation</em></small></td><td><small>Senior Software Engineer</small></td></tr>
 <tr><td><small><em>Employment Period</em></small></td><td><small>January 2003 – June 2004</small></td></tr>
-<tr><td><small><em>Role and Responsibilities</em></small></td><td><small>Designed and developed smart-card security applications and middleware for Linux, Solaris, and Mac OS X, including cryptographic services, authentication integration, and card lifecycle management.</small></td></tr>
+<tr><td><small><em>Engineering Scope</em></small></td><td><small>Designed and developed smart-card security applications and middleware for Linux, Solaris, and Mac OS X, including cryptographic services, authentication integration, and card lifecycle management.</small></td></tr>
 <tr><td><small><em>Skills / Technologies</em></small></td><td><small>C, C++, Linux (Red Hat 8/9), Solaris 8/9, Mac OS X 10.2, ISO 7816, PKCS#11, X.509, OpenSSL, PAM, Kerberos, Active Directory, Oracle 8i, OCI, ODBC, SQL, MUSCLE framework, USB smart-card readers, Schlumberger 64K smart cards</small></td></tr>
 </tbody>
 </table>
@@ -407,7 +395,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 
 **Description:** A cross-platform smart-card security suite for Linux, Solaris, and Mac OS X, supporting cryptographic operations, certificate management, user authentication, and smart-card issuance and maintenance.
 
-**Technical Contributions:**
+**Engineering Contributions:**
 - Implemented smart-card middleware APIs (**BSI, XSI, and SCard**) to exchange **ISO 7816 Application Protocol Data Units (APDUs)** with smart cards.
 - Implemented **PKCS#11 cryptographic services** for email encryption, digital signatures, secure browsing, and X.509 certificate download and import.
 - Integrated smart-card authentication with the **Linux Pluggable Authentication Modules (PAM)** framework, supporting local authentication using passwords or PKI credentials and domain authentication using **Kerberos and Microsoft Active Directory**.
@@ -422,7 +410,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 <tr><td><small><em>Organization</em></small></td><td><small>Ericsson India Private Limited, Hyderabad, India</small></td></tr>
 <tr><td><small><em>Designation</em></small></td><td><small>Senior Software Engineer</small></td></tr>
 <tr><td><small><em>Employment Period</em></small></td><td><small>August 2000 – January 2003</small></td></tr>
-<tr><td><small><em>Role and Responsibilities</em></small></td><td><small>Maintained and enhanced the Ericsson Tigris family of multiservice access routers, focusing on network security protocols, IPsec integration, hardware acceleration, and VPN capabilities.</small></td></tr>
+<tr><td><small><em>Engineering Scope</em></small></td><td><small>Maintained and enhanced the Ericsson Tigris family of multiservice access routers, focusing on network security protocols, IPsec integration, hardware acceleration, and VPN capabilities.</small></td></tr>
 <tr><td><small><em>Skills / Technologies</em></small></td><td><small>C, C++, Java, Linux, Solaris UNIX, IPsec, IKE, L2TP, VPN, ADSP-2141, SCEP, OCSP</small></td></tr>
 </tbody>
 </table>
@@ -433,7 +421,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 
 **Description:** Ericsson Tigris was a family of high-capacity multiservice access platforms available in three-, seven-, and eleven-slot chassis configurations. It combined dial-in access, dedicated access, and wide-area routing with support for VPNs, IPsec, IKE, L2TP, RADIUS, VoIP, and Quality of Service (QoS) capabilities.
 
-**Technical Contributions:**
+**Engineering Contributions:**
 - Integrated and tested an **IKE (Internet Key Exchange) stack from SSH** within Ericsson Datacom products.
 - Contributed to **IPsec hardware acceleration using SafeNet ADSP-2141**, including separation of IPsec processing from IP processing, offloading packet handling to cryptographic hardware, and integration with the device-driver interface.
 - Worked on **Security Association (SA) database management** within the cryptographic driver.
@@ -448,7 +436,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 <tr><td><small><em>Organization</em></small></td><td><small>Central Research Laboratory, BEL, Jalahalli Post, Bangalore – 560013</small></td></tr>
 <tr><td><small><em>Designation</em></small></td><td><small>Member (Research Staff), Crypto Group</small></td></tr>
 <tr><td><small><em>Employment Period</em></small></td><td><small>June 1999 – August 2000</small></td></tr>
-<tr><td><small><em>Role and Responsibilities</em></small></td><td><small>Researched and implemented security solutions, including cryptographic support for network communications and interfaces for GPS-based monitoring systems.</small></td></tr>
+<tr><td><small><em>Engineering Scope</em></small></td><td><small>Researched and implemented security solutions, including cryptographic support for network communications and interfaces for GPS-based monitoring systems.</small></td></tr>
 <tr><td><small><em>Skills / Technologies</em></small></td><td><small>C, C++, UNIX (Red Hat Linux 5.2), Windows 95, Oracle RDBMS, WebLogic, ClearCase, MOXA C101 synchronous communication card, JRC GPS module</small></td></tr>
 </tbody>
 </table>
@@ -459,7 +447,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 
 **Description:** FRED secured Frame Relay traffic between a **Frame Relay Access Device (FRAD)** and a **Frame Relay Switch (FRS)** through encryption and decryption.
 
-**Technical Contributions:**
+**Engineering Contributions:**
 - Contributed to implementing a **Linux cryptographic driver for the MOXA C101 PCI card** used in the Frame Relay encryption system.
 - Worked with the card's high-speed synchronous/asynchronous interface, incorporating an **HD64570 Serial Communication Adapter (SCA)** and **256 KB of dual-ported RAM**.
 
@@ -467,7 +455,7 @@ The hosted Core, OAuth, Policy, and other internal platform services are describ
 
 **Description:** A vehicle tracking and monitoring application that displayed a vehicle's current location using latitude and longitude data received from an onboard GPS receiver.
 
-**Technical Contributions:**
+**Engineering Contributions:**
 - Implemented the **GPS module interface** to validate incoming GPS data and extract latitude and longitude coordinates from **81-byte GPS frames**.
 
 ## 6. Education and Certifications
@@ -481,4 +469,4 @@ Regional Engineering College, Warangal
 
 ### 6.2 Certifications
 
-**Cloudera Certified Developer for Apache Hadoop (CCD-410)** — Exam passed September 2013; certification expired.
+**Cloudera Certified Developer for Apache Hadoop (CCD-410)** — Earned September 2013.
